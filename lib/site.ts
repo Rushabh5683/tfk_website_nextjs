@@ -1,0 +1,67 @@
+export const siteConfig = {
+  name: "The Farmer's Kitchen",
+  shortName: "TFK",
+  tagline: 'Authentic Flavors. Memorable Moments.',
+  description:
+    "The Farmer's Kitchen Shirwal serves authentic Maharashtrian, Punjabi, North Indian, Chinese and Mughlai cuisine. Premium family dining, reservations, takeaway and unforgettable hospitality.",
+  url: 'https://thefarmerskitchen.in',
+  ogImage:
+    'https://images.pexels.com/photos/9418616/pexels-photo-9418616.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  location: {
+    city: 'Shirwal',
+    state: 'Maharashtra',
+    country: 'India',
+    address: 'Shirwal, Maharashtra 412801, India',
+    region: 'Satara',
+    postalCode: '412801',
+    geo: { lat: 18.0595, lng: 74.0189 },
+    mapQuery: "The Farmer's Kitchen Shirwal Maharashtra",
+  },
+  phone: {
+    primary: '+91 8888833676 / +91 9011154531',
+    // secondary: '+91 9011154531',
+    primaryRaw: '918888833676',
+    secondaryRaw: '919011154531',
+  },
+  rating: 4.2,
+  reviewCount: 1700,
+  costForTwo: 700,
+  currency: 'INR',
+  hours: {
+    open: '11:00 AM',
+    close: '11:00 PM',
+    days: 'Mon - Sun',
+    schema: 'Mo-Su 11:00-23:00',
+  },
+  cuisines: [
+    'Best Restaurant in Shirwal',
+    'Maharashtrian Cuisine',
+    'Punjabi Favorites',
+    'Chinese Delights',
+    'Family Dining',
+    '4.2+ Google Rating',
+  ],
+  type: 'Premium Multi-Cuisine Family Dining Restaurant',
+  social: {
+    instagram: 'https://instagram.com',
+    facebook: 'https://facebook.com',
+    youtube: 'https://youtube.com',
+    twitter: 'https://twitter.com',
+  },
+  keywords: [
+    'Restaurant in Shirwal',
+    'Best Restaurant in Shirwal',
+    'Family Restaurant Shirwal',
+    'Maharashtrian Restaurant Shirwal',
+    'Punjabi Restaurant Shirwal',
+    'Chinese Restaurant Shirwal',
+    'Multi Cuisine Restaurant Shirwal',
+    "The Farmer's Kitchen Shirwal",
+    'Best Food in Shirwal',
+    'Shirwal Family Dining',
+    'Food Near Shirwal Highway',
+    'Best Dining Experience Shirwal',
+  ],
+} as const;
+
+export type SiteConfig = typeof siteConfig;
