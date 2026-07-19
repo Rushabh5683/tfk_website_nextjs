@@ -1900,7 +1900,7 @@ export type GalleryImage = {
 export const galleryImages: GalleryImage[] = [
   {
     id: 'g1',
-    src: '/images/starter.jpg',
+    src: '/MenuImages/Veg 65.png',
     alt: 'Veg Starter Platters',
     category: 'Food',
     width: 900,
@@ -1980,7 +1980,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: 'g11',
-    src: '/images/6R1A2826.jpg',
+    src: '/MenuImages/Chicken tikka.png',
     alt: 'Chicken Tikka',
     category: 'Food',
     width: 900,
@@ -1988,7 +1988,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: 'g12',
-    src: '/images/6R1A2832.jpg',
+    src: '/MenuImages/Panner 65.png',
     alt: 'Signature Dish',
     category: 'Food',
     width: 900,
@@ -2147,6 +2147,24 @@ export const galleryImages: GalleryImage[] = [
     width: 900,
     height: 800,
   },
+  {
+    id: 'g33',
+    src: '/images/Art1.jpg',
+    alt: 'Restaurant',
+    category: 'Restaurant',
+    width: 900,
+    height: 800,
+  },
+  {
+    id: 'g34',
+    src: '/images/Garden Image.jpg',
+    alt: 'Restaurant',
+    category: 'Restaurant',
+    width: 900,
+    height: 800,
+  },
+
+
   
 ];
 
@@ -2167,7 +2185,7 @@ export const testimonials: Testimonial[] = [
     location: 'Pune',
     rating: 5,
     initials: 'RP',
-    date: '2 weeks ago',
+    date: 'June 2026',
     text: "Farmer's Kitchen – A Peaceful Delight Visited Farmer’s Kitchen recently and had a really pleasant experience. The ambience is calm, clean, and beautifully done, making it a perfect spot for a relaxed meal.The washrooms were hygienic, smelled fresh, and even had music playing — a small but thoughtful touch!. The food was tasty, well-prepared, and priced reasonably. We didn’t have to wait too long for service, which was a big plus.There’s ample parking space available right outside. For families, it’s a great place too — there’s a garden, a slide, and a jhula for kids to enjoy while you dine.Overall, a peaceful place with good food, great atmosphere, and family-friendly vibes. Would definitely recommend!",
   },
   {
@@ -2176,7 +2194,7 @@ export const testimonials: Testimonial[] = [
     location: 'Satara',
     rating: 5,
     initials: 'SD',
-    date: '1 month ago',
+    date: 'May 2026',
     text: "From the moment I walked in, I was greeted with warm hospitality and a cozy atmosphere. The rustic decor and welcoming ambiance set the stage for a memorable dining experience.The menu boasts a diverse selection of dishes, catering to every palate. Whether you're craving comfort food classics or adventurous culinary creations, Farmer's Kitchen has something for everyone. The ingredients were fresh, the flavors were robust, and each dish was expertly prepared with care.Whether you're passing through or looking for a destination dining experience, I highly recommend stopping by this hidden gem along the Pune Bangalore highway. You won't be disappointed.",
   },
   {
@@ -2185,7 +2203,7 @@ export const testimonials: Testimonial[] = [
     location: 'Mumbai',
     rating: 4,
     initials: 'AK',
-    date: '3 weeks ago',
+    date: 'March 2026',
     text: "We randomly stopped here and didn't have much expectations but after tasting their food it surpassed all of our expectations firstly their service is top notch very prompt and responsive people they cater to even small personal requests. Food is good as it gets we ordered murg mussallam, mutton Thali and chicken thali along with rabdi each dish were mouth watering and I was amazed with the quantity the portion size clearly justifies they price point.Facilities are great and maintained huge open space neat and clean washrooms.Overall if you are looking for a good place to eat keep this place bookmarked.",
   },
   {
@@ -2194,7 +2212,7 @@ export const testimonials: Testimonial[] = [
     location: 'Bengaluru',
     rating: 5,
     initials: 'PS',
-    date: '2 months ago',
+    date: 'February 2026',
     text: "My experience with farmer's kitchen was really pleasant and wholesome. The food was topnotch and so was the service. You can opt to eat indoors or outdoors, we chose to eat outdoors and the view was stunning seeing the blue sky and large clouds breeze past in the sky. Overall it was a memorable experience for me and my family"
   },
   {
@@ -2203,7 +2221,7 @@ export const testimonials: Testimonial[] = [
     location: 'Pune',
     rating: 5,
     initials: 'KM',
-    date: '1 week ago',
+    date: 'July 2026',
     text: "Best restaurant to enjoy authentic Maharastian thali. Must try Puranpoli, it's perfect texture, filling & taste is amazing. I would rate 5/5 for this restaurant for its yum food, hygienic & overall service.The staff is also very polite. Request to start another branch in Mahabaleshwar, since there is absolutely no restaurant that serves such authentic maharashtrian food."
   },
   {
@@ -2212,9 +2230,91 @@ export const testimonials: Testimonial[] = [
     location: 'Kolhapur',
     rating: 4,
     initials: 'AN',
-    date: '3 months ago',
+    date: 'January 2026',
     text: "It is a super clean, hygienic hotel with good food. Decor and ambience like a theme restaurant in the city. Super clean and newly constructed washroom, which even had music. Pleasantly surprised by this rare find on the highway! Highly recommended.",
   },
+  {
+    id: 't7',
+    name: 'Shweta Saraf',
+    location: 'Pune',
+    rating: 5,
+    initials: 'SS',
+    date: 'June 2026',
+    text: "I feel this is the best place to have food while traveling anytime. The food tastes really good with best people around. Just to make a note they have chicken handi tastes the best. Our whole group loved the place.The service is best by far wherever I have traveled in near Pune. The staff is so good and helpful for everything.Also, need to mention about the cleanliness they have maintained all through their premises. The washroom are so clean and well maintained. The restaurant having good vibe to eat and have good people around.I recommend everyone to actually go and enjoy the place.",
+  },
+   {
+    id: 't8',
+    name: 'Supriya Nair',
+    location: 'Mumbai',
+    rating: 5,
+    initials: 'SN',
+    date: 'March 2026',
+    text: "This restaurant has good food options both veg and non veg. Thalis are good if you have the appetite. In veg, we had Dal Khichdi, Chinese triple rice, Solkadi, fresh lime sodas, desserts included Modaks 😋. A feel good restaurant that gives you traditional and modern food options.A big appreciation for Sunil who helped us with our food selections, and provided great attention to our food service.The restrooms are also very clean. A big shout out/appreciation to the cleaning lady who is always smiling.",
+  },
+  {
+    id: 't9',
+    name: 'Shreyas Adyanthaya',
+    location: 'Karad',
+    rating: 4,
+    initials: 'SA',
+    date: 'June 2026',
+    text: "Excellent experience overall. Great service with attentive and courteous staff. The seating area is spacious, airy, and comfortable, creating a relaxed atmosphere. Food is freshly prepared, flavorful, and served promptly. The team is also very accommodating with special requests and food substitutions, which is always appreciated. A great place for a comfortable meal with consistently good service and tasty food.",
+  },
+  {
+    id: 't10',
+    name: 'Nihar Kadam',
+    location: 'Satara',
+    rating: 4,
+    initials: 'NK',
+    date: 'January 2026',
+    text: "Had a good experience at this restaurant. The place was very clean, including the washroom facilities, which were well-maintained. The service was prompt, and the food was delicious. We were a group of 13 people and had ordered veg dal khichdi, veg kolhapuri, Masala buttermilk, sweet lassi, Piti Bhakri, tantoori rotis, Jeera rice. Overall, a comfortable and pleasant dining experience.",
+  },
+   {
+    id: 't11',
+    name: 'Dhruv Deshmukh',
+    location: 'Panchgani',
+    rating: 4,
+    initials: 'DD',
+    date: 'January 2026',
+    text: "The hotel was clean and we'll organized. The food portions were commensurate with price. Service was fast and hot food was served. Taste was also good.Good place to stop and have lunch on Pune-Satara(NH-48) highway.",
+  },
+  {
+    id: 't12',
+    name: 'Ruchi Pandey',
+    location: 'Mahabaleshwar ',
+    rating: 4,
+    initials: 'RP',
+    date: 'January 2025',
+    text: "We stopped by this restaurant on our way from Mahabaleshwar and had a meal here.What stood out to me the most were the clean and hygienic washrooms.The staff was exceptionally courteous and supportive.The overall ambience of the restaurant was superb and delightful. I will definitely recommend it to everyone!",
+  },
+  {
+    id: 't13',
+    name: 'Manan Khambati',
+    location: 'Mumbai ',
+    rating: 5,
+    initials: 'MK',
+    date: 'April 2026',
+    text: "Very good location, sign boards are very clear and helpful. Good food and lot of parking. Nice ambiance and friendly staff. You can also buy hand made masala etc from attached shop.",
+  },
+  {
+    id: 't14',
+    name: 'Sreekesh SV',
+    location: 'Satara ',
+    rating: 5,
+    initials: 'SV',
+    date: 'December 2025',
+    text: "From the moment I walked in, I was greeted with warm hospitality and a cozy atmosphere. The rustic decor and welcoming ambiance set the stage for a memorable dining experience.The menu boasts a diverse selection of dishes, catering to every palate. Whether you're craving comfort food classics or adventurous culinary creations, Farmer's Kitchen has something for everyone. The ingredients were fresh, the flavors were robust, and each dish was expertly prepared with care.Whether you're passing through or looking for a destination dining experience, I highly recommend stopping by this hidden gem along the Pune Bangalore highway. You won't be disappointed",
+  },
+  {
+    id: 't15',
+    name: 'Trupti Wani',
+    location: 'Goa ',
+    rating: 5,
+    initials: 'TW',
+    date: 'April 2026',
+    text: "This place never disappoints. Food is really delicious. If anyone wants to taste nice Maharashtrian meal, this place serves the best food. This time Mr. Kishor served us and was very helpful and quick with service. Would like to visit again as we always do.",
+  },
+  
 ];
 
 export type Faq = {

@@ -7,18 +7,17 @@ import { PageHero } from '@/components/shared/page-hero';
 import { galleryImages } from '@/lib/data';
 import { cn } from '@/lib/utils';
 
-const categories = ['All', 'Food', 'Ambience', 'Restaurant', 'Before & After'] as const;
+const categories = [ 'Food', 'Ambience', 'Restaurant', 'Before & After'] as const;
 
 export function GalleryPage() {
-  const [active, setActive] = React.useState<(typeof categories)[number]>('All');
+  const [active, setActive] = React.useState<(typeof categories)[number]>('Food');
   const [lightbox, setLightbox] = React.useState<number | null>(null);
   const ref = React.useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, margin: '-40px' });
 
   const filtered = React.useMemo(() => {
-    if (active === 'All') return galleryImages;
-    return galleryImages.filter((g) => g.category === active);
-  }, [active]);
+  return galleryImages.filter((g) => g.category === active);
+}, [active]);
 
   const closeLightbox = () => setLightbox(null);
   const next = () => setLightbox((p) => (p === null ? null : (p + 1) % filtered.length));

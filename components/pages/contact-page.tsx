@@ -7,6 +7,10 @@ import { z } from 'zod';
 import { motion, useInView } from 'framer-motion';
 import { toast } from 'sonner';
 import {
+  Dialog,
+  DialogContent,
+} from "@/components/ui/dialog";
+import {
   MapPin,
   Phone,
   Clock,
@@ -16,6 +20,7 @@ import {
   Send,
   CheckCircle2,
   MessageCircle,
+  Loader2
 } from 'lucide-react';
 import { PageHero } from '@/components/shared/page-hero';
 import { SectionHeading } from '@/components/shared/section-heading';
@@ -93,6 +98,8 @@ export function ContactPage() {
   const ref = React.useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, margin: '-60px' });
   const [submitted, setSubmitted] = React.useState(false);
+  const [loading, setLoading] = React.useState(false);
+  const [showModal, setShowModal] = React.useState(false);
 
   const form = useForm<FormValues>({
     resolver: zodResolver(schema),
@@ -108,12 +115,91 @@ export function ContactPage() {
     },
   });
 
-  const onSubmit = (values: FormValues) => {
+  const onSubmit = async (values: FormValues) => {
+    setLoading(true);
+    setShowModal(true);
+
+    const phone = "+918888833676";
+
+    const formattedDate = new Date(values.date).toLocaleDateString(
+      "en-IN",
+      {
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+      }
+    );
+
+    const message = `
+━━━━━━━━━━━━━━━━━━━━━━
+
+*THE FARMER'S KITCHEN*
+
+*TABLE RESERVATION*
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+*Customer*
+
+Name
+${values.name}
+
+Phone
+${values.phone}
+
+Email
+${values.email}
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+*Reservation*
+
+Date
+${formattedDate}
+
+Time
+${values.time}
+
+Guests
+${values.guests}
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+*Occasion*
+
+${values.occasion || "No Occasion Selected"}
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+*Special Requests*
+
+${values.message || "No Special Requests"}
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+Please confirm my reservation.
+
+Thank you ❤️
+`;
+
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(
+      message
+    )}`;
+
+    await new Promise((resolve) =>
+      setTimeout(resolve, 2200)
+    );
+
+    window.open(url, "_blank");
+
+    setLoading(false);
     setSubmitted(true);
-    toast.success('Reservation request received!', {
-      description: `Thank you, ${values.name}. Our team will confirm your reservation shortly.`,
-    });
+
     form.reset();
+
+    setTimeout(() => {
+      setShowModal(false);
+    }, 1000);
   };
 
   const today = new Date().toISOString().split('T')[0];
@@ -128,9 +214,9 @@ export function ContactPage() {
         breadcrumb="Contact"
       />
 
-      
 
-      <section className="pb-20 md:pb-28 " style={{marginTop: '4rem'}}>
+
+      <section className="pb-20 md:pb-28 " style={{ marginTop: '4rem' }}>
         <div className="container-mx container-px">
           <div className="grid gap-10 lg:grid-cols-12 lg:gap-12">
             <div className="lg:col-span-7">
@@ -281,21 +367,32 @@ export function ContactPage() {
 
                     <Button
                       type="submit"
-                      className="btn-shine h-12 w-full rounded-full bg-brand-500 px-6 text-white hover:bg-brand-600"
+                      disabled={loading}
+                      className="h-12 w-full rounded-full"
                     >
-                      <Send className="mr-2 h-4 w-4" />
-                      Request Reservation
+                      {loading ? (
+                        <>
+                          <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                          Preparing Reservation...
+                        </>
+                      ) : (
+                        <>
+                          <Send className="mr-2 h-4 w-4" />
+                          Request Reservation
+                        </>
+                      )}
                     </Button>
-
                     {submitted && (
-                      <motion.div
-                        initial={{ opacity: 0, y: 10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        className="flex items-center gap-2 rounded-xl border border-green-200 bg-green-50 p-3 text-sm text-green-700"
-                      >
-                        <CheckCircle2 className="h-4 w-4" />
-                        Thank you! Our team will reach out shortly to confirm your reservation.
-                      </motion.div>
+                      <div>
+                        <p className="font-semibold">
+                          Reservation Ready!
+                        </p>
+
+                        <p className="mt-1">
+                          WhatsApp has been opened.
+                          Simply tap <strong>Send</strong> to complete your reservation.
+                        </p>
+                      </div>
                     )}
                   </form>
                 </Form>
@@ -389,6 +486,67 @@ export function ContactPage() {
           </div>
         </div>
       </section>
+      <Dialog open={showModal}>
+
+        <DialogContent className="max-w-md rounded-3xl">
+
+          <div className="py-8 text-center">
+
+            {loading ? (
+
+              <>
+
+                <Loader2 className="mx-auto h-14 w-14 animate-spin text-brand-500" />
+
+                <h2 className="mt-6 text-2xl font-bold">
+
+                  Preparing Your Reservation
+
+                </h2>
+
+                <p className="mt-3 text-muted-foreground">
+
+                  Please wait...
+
+                  We are preparing your reservation details.
+
+                </p>
+
+              </>
+
+            ) : (
+
+              <>
+
+                <CheckCircle2 className="mx-auto h-16 w-16 text-green-600" />
+
+                <h2 className="mt-6 text-2xl font-bold">
+
+                  Reservation Ready!
+
+                </h2>
+
+                <p className="mt-3 text-muted-foreground">
+
+                  WhatsApp has opened successfully.
+
+                </p>
+
+                <p className="font-semibold mt-2">
+
+                  Simply tap SEND to complete your reservation.
+
+                </p>
+
+              </>
+
+            )}
+
+          </div>
+
+        </DialogContent>
+
+      </Dialog>
     </>
   );
 }

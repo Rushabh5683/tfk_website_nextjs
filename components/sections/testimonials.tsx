@@ -11,6 +11,7 @@ import { cn } from '@/lib/utils';
 export function Testimonials() {
   const [index, setIndex] = React.useState(0);
   const [direction, setDirection] = React.useState(1);
+  const [isHovered, setIsHovered] = React.useState(false);
   const ref = React.useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, margin: '-60px' });
 
@@ -20,13 +21,15 @@ export function Testimonials() {
   };
 
   React.useEffect(() => {
-    if (!inView) return;
+    if (!inView || isHovered) return;
+
     const id = setInterval(() => {
       setDirection(1);
       setIndex((prev) => (prev + 1) % testimonials.length);
     }, 6000);
+
     return () => clearInterval(id);
-  }, [inView]);
+  }, [inView, isHovered]);
 
   const active = testimonials[index];
 
@@ -42,7 +45,11 @@ export function Testimonials() {
         />
 
         <div ref={ref} className="mx-auto mt-14 max-w-4xl">
-          <div className="relative overflow-hidden rounded-2xl border border-border bg-card p-8 premium-shadow sm:p-12">
+          <div
+            className="relative overflow-hidden rounded-2xl border border-border bg-card p-8 premium-shadow sm:p-12 cursor-pointer"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
             <Quote className="absolute -top-2 left-6 h-20 w-20 text-brand-100" />
 
             <div className="relative min-h-[260px]">
