@@ -13,25 +13,25 @@ import { Cta } from '@/components/sections/cta';
 
 const timeline = [
   {
-    year: '2012',
+    year: '2019',
     title: 'The Beginning',
     description:
-      "The Farmer's Kitchen opened its doors in Shirwal with a simple vision — to serve authentic regional Indian food with warm hospitality to highway travellers and local families alike.",
+      "I spent 26 years working as a Development Officer in a Public Sector Insurance Undertaking. As I was preparing to take voluntary retirement (VRS), an unexpected opportunity came my way, and I found myself becoming an accidental restaurateur.With no prior experience in the hospitality industry, I decided to give it my absolute best. After six months of relentless hard work, dedication, and learning, we proudly opened our doors to the people of Shirwal on 15th August 2019. What began as an unexpected journey soon became a passion for serving delicious food and creating memorable dining experiences for every guest who walks through our doors.",
   },
   {
-    year: '2015',
+    year: '2022',
     title: 'A Regional Favourite',
     description:
       'Within three years, we became one of Shirwal’s most loved dining destinations, earning a loyal following for our Maharashtrian thali and Punjabi classics.',
   },
   {
-    year: '2018',
+    year: '2024',
     title: 'Multi-Cuisine Expansion',
     description:
-      'We expanded our kitchen to include dedicated chefs for Chinese and Mughlai cuisine, bringing five distinct regional menus under one roof.',
+      'Our vision was simple—to create the kind of highway restaurant we would love to visit ourselves: clean, hygienic, welcoming, and serving delicious food. We believe every guest deserves a warm smile, a comfortable dining experience, and even a spotless washroom. These values have been our foundation since day one and remain non-negotiable.',
   },
   {
-    year: '2022',
+    year: '2025',
     title: 'Premium Dining Redefined',
     description:
       'A complete interior redesign introduced our signature premium ambience — warm lighting, elegant seating and a refined dining atmosphere.',

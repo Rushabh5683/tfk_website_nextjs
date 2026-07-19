@@ -19,252 +19,1880 @@ export type MenuCategory = {
 };
 
 export const menuCategories: MenuCategory[] = [
-  {
-    id: 'maharashtrian',
-    name: 'Maharashtrian',
-    description: 'Authentic regional flavours from the heart of Maharashtra.',
-    icon: '',
-  },
-  {
-    id: 'punjabi',
-    name: 'Punjabi',
-    description: 'Rich, hearty and iconic dishes from Punjab.',
-    icon: '',
-  },
-  {
-    id: 'north-indian',
-    name: 'North Indian',
-    description: 'Aromatic biryanis, kebabs and tandoori specialities.',
-    icon: '',
-  },
-  {
-    id: 'chinese',
-    name: 'Chinese',
-    description: 'Indo-Chinese favourites packed with bold wok flavour.',
-    icon: '',
-  },
-  {
-    id: 'mughlai',
-    name: 'Mughlai',
-    description: 'Royal Mughal recipes with creamy, fragrant gravies.',
-    icon: '',
-  },
-  {
-    id: 'kebabs',
-    name: 'Kebabs & Starters',
-    description: 'Smoky tandoor-grilled kebabs and irresistible starters.',
-    icon: '',
-  },
+ {
+  id: 'maharashtrian',
+  name: 'Maharashtrian',
+  description: 'Authentic regional flavours from the heart of Maharashtra.',
+  icon: '',
+},
+{
+  id: 'punjabi',
+  name: 'Punjabi',
+  description: 'Rich, hearty and iconic dishes from Punjab.',
+  icon: '',
+},
+{
+  id: 'breads',
+  name: 'Breads',
+  description: 'Freshly baked rotis, naans, kulchas and Indian breads served hot from the tandoor.',
+  icon: '',
+},
+{
+  id: 'rice',
+  name: 'Rice & Noodles',
+  description: 'Flavorful rice preparations, fried rice and wok-tossed noodles for every craving.',
+  icon: '',
+},
+// {
+//   id: 'north-indian',
+//   name: 'North Indian',
+//   description: 'Aromatic biryanis, kebabs and tandoori specialities.',
+//   icon: '',
+// },
+{
+  id: 'chinese',
+  name: 'Chinese',
+  description: 'Indo-Chinese favourites packed with bold wok flavour.',
+  icon: '',
+},
+{
+  id: 'starters',
+  name: 'Starters',
+  description: 'A delicious selection of veg and non-veg starters, packed with bold flavors and irresistible aromas.',
+  icon: '',
+},
+{
+  id: 'kebabs',
+  name: 'Kebabs & Tandoor',
+  description: 'Smoky tandoor-grilled kebabs and irresistible starters.',
+  icon: '',
+},
+{
+  id: 'soups',
+  name: 'Soups',
+  description: 'Warm, comforting soups crafted with fresh ingredients and rich flavours.',
+  icon: '',
+},
+{
+  id: 'salads',
+  name: 'Salads & Raita',
+  description: 'Fresh salads and refreshing raitas that perfectly complement every meal.',
+  icon: '',
+},
+{
+  id: 'desserts',
+  name: 'Desserts',
+  description: 'Traditional Indian sweets and delightful desserts to end your meal on a sweet note.',
+  icon: '',
+},
 ];
 
 export const dishes: Dish[] = [
-  {
-    id: 'mutton-rogan-josh',
-    name: 'Mutton Rogan Josh',
-    description:
-      'Slow-cooked tender mutton in a fragrant Kashmiri-style gravy with whole spices and a deep red hue.',
-    price: 420,
-    category: 'maharashtrian',
-    image:
-      'https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=900',
-    tags: ['Bestseller', 'Slow Cooked'],
-    signature: true,
-    spicy: true,
-  },
-  {
-    id: 'chicken-sukka',
-    name: 'Chicken Sukka',
-    description:
-      'Coastal Maharashtrian dry chicken with roasted coconut, fresh curry leaves and bold spices.',
-    price: 320,
-    category: 'maharashtrian',
-    image:
-      'https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=900',
-    tags: ['Coastal', 'Roasted Coconut'],
-    signature: true,
-    spicy: true,
-  },
-  {
-    id: 'maharashtrian-thali',
-    name: 'Maharashtrian Thali',
-    description:
-      'A complete traditional platter with bhakri, pithla, rice, thecha, solkadhi, papad and pickle.',
-    price: 280,
-    category: 'maharashtrian',
-    image:
-      'https://images.pexels.com/photos/7871342/pexels-photo-7871342.jpeg?auto=compress&cs=tinysrgb&w=900',
-    tags: ['Traditional', 'Family Pack'],
-    signature: true,
-    veg: true,
-  },
-  {
-    id: 'paneer-kadhai',
-    name: 'Paneer Kadhai',
-    description:
-      'Cottage cheese simmered in a freshly ground kadhai masala with crunchy bell peppers.',
-    price: 280,
-    category: 'punjabi',
-    image:
-      'https://images.pexels.com/photos/4443482/pexels-photo-4443482.jpeg?auto=compress&cs=tinysrgb&w=900',
-    tags: ['Fresh Paneer', 'Restaurant Favourite'],
-    signature: true,
-    veg: true,
-  },
-  {
-    id: 'butter-chicken',
-    name: 'Butter Chicken',
-    description:
-      'Tandoori chicken in a velvety tomato-butter gravy with a hint of cream and crushed fenugreek.',
-    price: 360,
-    category: 'punjabi',
-    image:
-      'https://images.pexels.com/photos/7625056/pexels-photo-7625056.jpeg?auto=compress&cs=tinysrgb&w=900',
-    tags: ['Classic', 'Creamy'],
-    spicy: false,
-  },
-  {
-    id: 'pithla-bhakri',
-    name: 'Pithla Bhakri',
-    description:
-      'Maharashtrian classic of slow-cooked black lentils in a creamy, spiced gravy, served with traditional jowar bhakri.',
-    price: 220,
-    category: 'Maharashtrian',
-    image:
-      '/images/6R1A2871.jpg',
-    tags: ['Slow Cooked', 'Comfort'],
-    veg: true,
-  },
-  {
-    id: 'hyderabadi-biryani',
-    name: 'Hyderabadi Biryani',
-    description:
-      'Fragrant basmati layered with marinated meat, saffron and whole spices, sealed and dum-cooked.',
-    price: 340,
-    category: 'north-indian',
-    image:
-      'https://images.pexels.com/photos/12737656/pexels-photo-12737656.jpeg?auto=compress&cs=tinysrgb&w=900',
-    tags: ['Dum Cooked', 'Aromatic'],
-    signature: true,
-    spicy: true,
-  },
-  {
-    id: 'noodle',
-    name: 'Schezwan Noodles',
-    description:
-      'Wok-tossed noodles with crunchy vegetables and house-made schezwan sauce for fiery heat.',
-    price: 220,
-    category: 'chinese',
-    image:
-      '/images/noodles.jpg',
-    tags: ['Tandoor', 'Smoky'],
-    spicy: true,
-  },
-  {
-    id: 'tandoori-platter',
-    name: 'Sampurna Ahar Thali',
-    description:
-      'Sampurna Ahar Thali serves authentic Maharashtrian cuisine with a complete traditional thali, featuring fresh ingredients, rich flavors, and a satisfying home-style dining experience.',
-    price: 580,
-    category: 'north-indian',
-    image:
-      'https://images.pexels.com/photos/2233348/pexels-photo-2233348.jpeg?auto=compress&cs=tinysrgb&w=900',
-    tags: ['Sharing', 'Tandoor'],
-    signature: true,
-  },
-  {
-    id: 'angari-murgh-musallam',
-    name: 'Angari Murgh Musallam',
-    description:
-      'Whole chicken marinated in royal Mughlai spices, stuffed and slow-cooked in a rich cashew gravy.',
-    price: 520,
-    category: 'mughlai',
-    image:
-      'https://images.pexels.com/photos/8697591/pexels-photo-8697591.jpeg?auto=compress&cs=tinysrgb&w=900',
-    tags: ['Royal Recipe', 'Signature'],
-    signature: true,
-    spicy: true,
-  },
-  {
-    id: 'veg-manchurian',
-    name: 'Veg Manchurian',
-    description:
-      'Crispy veg dumplings tossed in a tangy Indo-Chinese soy-garlic sauce with spring onion.',
-    price: 240,
-    category: 'chinese',
-    image:
-      'https://images.pexels.com/photos/6995445/pexels-photo-6995445.jpeg?auto=compress&cs=tinysrgb&w=900',
-    tags: ['Indo-Chinese', 'Tangy'],
-    veg: true,
-    spicy: true,
-  },
-  {
-    id: 'schezwan-noodles',
-    name: 'Schezwan Noodles',
-    description:
-      'Wok-tossed noodles with crunchy vegetables and house-made schezwan sauce for fiery heat.',
-    price: 220,
-    category: 'chinese',
-    image:
-      'https://images.pexels.com/photos/2347311/pexels-photo-2347311.jpeg?auto=compress&cs=tinysrgb&w=900',
-    tags: ['Wok-Tossed', 'Spicy'],
-    veg: true,
-    spicy: true,
-  },
-  {
-    id: 'hakka-noodles',
-    name: 'Hakka Noodles',
-    description:
-      'Stir-fried noodles with shredded vegetables, soy and a smoky wok finish.',
-    price: 200,
-    category: 'chinese',
-    image:
-      'https://images.pexels.com/photos/2347311/pexels-photo-2347311.jpeg?auto=compress&cs=tinysrgb&w=900',
-    tags: ['Classic'],
-    veg: true,
-  },
-  {
-    id: 'veg-fried-rice',
-    name: 'Veg Fried Rice',
-    description:
-      'Long-grain rice tossed with vegetables, soy and a hint of garlic for the perfect side.',
-    price: 190,
-    category: 'chinese',
-    image:
-      'https://images.pexels.com/photos/723198/pexels-photo-723198.jpeg?auto=compress&cs=tinysrgb&w=900',
-    tags: ['Light', 'Comfort'],
-    veg: true,
-  },
-  {
-    id: 'paneer-tikka',
-    name: 'Paneer Tikka',
-    description:
-      'Cubes of cottage cheese marinated in spiced yogurt, char-grilled with peppers and onions.',
-    price: 260,
-    category: 'kebabs',
-    image:
-      'https://images.pexels.com/photos/4198015/pexels-photo-4198015.jpeg?auto=compress&cs=tinysrgb&w=900',
-    tags: ['Tandoor', 'Veg Favourite'],
-    veg: true,
-  },
-  {
-    id: 'malai-kofta',
-    name: 'Malai Kofta',
-    description:
-      'Soft paneer-potato dumplings in a silky cashew and cream gravy — pure Mughlai indulgence.',
-    price: 290,
-    category: 'mughlai',
-    image:
-      'https://images.pexels.com/photos/6002294/pexels-photo-6002294.jpeg?auto=compress&cs=tinysrgb&w=900',
-    tags: ['Creamy', 'Mild'],
-    veg: true,
-  },
+  //Maharshtrian Dishes
+ {
+  id: 'pithla',
+  name: 'Pithla',
+  description:
+    'A classic Maharashtrian gram flour curry cooked with traditional spices, offering simple yet comforting homestyle flavours.',
+  price: 165,
+  category: 'maharashtrian',
+  image: '/MenuImages/Pithla Bhakri.png',
+  tags: ['Traditional', 'Homestyle'],
+  veg: true,
+},
+
+{
+  id: 'lasooni-pithla',
+  name: 'Lasooni Pithla',
+  description:
+    'A traditional Maharashtrian gram flour delicacy infused with roasted garlic, aromatic spices, and authentic rural flavours.',
+  price: 175,
+  category: 'maharashtrian',
+  image: '/MenuImages/Pithla Bhakri.png',
+  tags: ['Traditional', 'Garlic Special'],
+  veg: true,
+},
+
+{
+  id: 'methi-pithla',
+  name: 'Methi Pithla',
+  description:
+    'A wholesome Maharashtrian pithla prepared with fresh fenugreek leaves, gram flour, and rustic village-style seasonings.',
+  price: 195,
+  category: 'maharashtrian',
+  image: '/MenuImages/Pithla Bhakri.png',
+  tags: ['Fenugreek', 'Traditional'],
+  veg: true,
+},
+
+{
+  id: 'varan',
+  name: 'Varan',
+  description:
+    'A comforting Maharashtrian lentil preparation cooked with ghee and mild spices, served as a timeless family favourite.',
+  price: 150,
+  category: 'maharashtrian',
+  image: '/MenuImages/Varan.png',
+  tags: ['Dal', 'Comfort Food'],
+  veg: true,
+},
+
+{
+  id: 'bharli-vangi',
+  name: 'Bharli Vangi',
+  description:
+    'Tender baby brinjals stuffed with a flavourful blend of peanuts, coconut, and traditional Maharashtrian spices.',
+  price: 175,
+  category: 'maharashtrian',
+  image: '/MenuImages/Bharla Vanga.jpg',
+  tags: ['Stuffed Brinjal', 'Traditional'],
+  veg: true,
+},
+
+{
+  id: 'matki-usal',
+  name: 'Matki Usal',
+  description:
+    'Protein-rich sprouted matki beans simmered in a spicy Maharashtrian gravy, bursting with authentic regional flavours.',
+  price: 175,
+  category: 'maharashtrian',
+  image: '/MenuImages/Matki Usal.png',
+  tags: ['Sprouts', 'Healthy'],
+  veg: true,
+},
+
+{
+  id: 'pivla-batata-bhaji',
+  name: 'Pivla Batata Bhaji',
+  description:
+    'Traditional yellow potato curry tempered with mustard seeds, turmeric, and curry leaves for a homely Maharashtrian taste.',
+  price: 175,
+  category: 'maharashtrian',
+  image: '/MenuImages/Pivla Batata Bhaji.png',
+  tags: ['Potato', 'Homestyle'],
+  veg: true,
+},
+
+{
+  id: 'kothimbir-vadi',
+  name: 'Kothimbir Vadi',
+  description:
+    'Steamed and pan-fried coriander fritters made with gram flour and aromatic Maharashtrian spices.',
+  price: 175,
+  category: 'maharashtrian',
+  image: '/MenuImages/KOthimbir Vadi.jpg',
+  tags: ['Snack', 'Traditional'],
+  veg: true,
+},
+{
+  id: 'gavraan-thali',
+  name: 'Gavraan Thali',
+  description:
+    'A rustic Maharashtrian village-style feast featuring bhakri, seasonal bhaji, varan bhaat, thecha, kothimbir vadi, papad, loncha and chutney.',
+  price: 295,
+  category: 'maharashtrian',
+  image: '/MenuImages/Gavran Thali.png',
+  tags: ['Village Special', 'Traditional Thali'],
+  signature: false,
+  veg: true,
+},
+
+{
+  id: 'puneri-thali',
+  name: 'Puneri Thali',
+  description:
+    'A delightful Pune-style thali served with puris, pivla batata bhaji, sweet dish, varan bhaat, papad and traditional accompaniments.',
+  price: 340,
+  category: 'maharashtrian',
+  image: '/MenuImages/Puneri Thali.png',
+  tags: ['Pune Special', 'Traditional Thali'],
+  signature: false,
+  veg: true,
+},
+
+{
+  id: 'sampurna-aahar-thali',
+  name: 'Sampurna Aahar Thali',
+  description:
+    'A wholesome Maharashtrian meal featuring bhajis, bhakri, varan, rice, thecha, kothimbir vadi, papad, dry chutney and a sweet dish.',
+  price: 390,
+  category: 'maharashtrian',
+  image: '/MenuImages/Sampurna Aahar Thali.png',
+  tags: ['Complete Meal', 'Best Seller'],
+  signature: false,
+  veg: true,
+},
+
+{
+  id: 'puran-poli-thali',
+  name: 'Puran Poli Thali',
+  description:
+    'A festive Maharashtrian thali featuring two authentic puran polis served with milk and jaggery, katachi amti, rice, papad, kurdai and traditional bhajis.',
+  price: 390,
+  category: 'maharashtrian',
+  image: '/MenuImages/Puran Poli Thali.png',
+  tags: ['Festival Special', 'Best Seller'],
+  signature: true,
+  veg: true,
+},
+{
+  id: 'punjabi-mini-thali',
+  name: 'Punjabi Mini Thali',
+  description:
+    'A satisfying Punjabi meal featuring a paneer or vegetable preparation, dal, jeera rice, roti, salad, papad and traditional accompaniments.',
+  price: 280,
+  category: 'punjabi',
+  image: '/MenuImages/Punjabi Mini Thali.png',
+  tags: ['Punjabi Special', 'Mini Thali'],
+  signature: false,
+  veg: true,
+},
+
+{
+  id: 'tfk-chef-special-veg-thali',
+  name: 'TFK Chef Special Veg Thali',
+  description:
+    'Our signature vegetarian feast featuring premium paneer preparation, seasonal vegetables, dal, rice, Indian breads, salad, papad and a sweet dish.',
+  price: 480,
+  category: 'punjabi',
+  image: '/MenuImages/Tfk_Chef_Spl_Veg_Thali.png',
+  tags: ['Chef Special', 'Premium Thali'],
+  signature: true,
+  veg: true,
+},
+{
+  id: 'paneer-angara-masala',
+  name: 'Paneer Angara Masala',
+  description:
+    'Smoky paneer cubes cooked in a rich and spicy Angara-style gravy.',
+  price: 310,
+  category: 'punjabi',
+  image: '/MenuImages/Panner.png',
+  tags: ['Smoky', 'Chef Special'],
+  veg: true,
+  spicy: true,
+  signature: true,
+},
+
+{
+  id: 'tfk-chef-special-non-veg-thali',
+  name: 'TFK Chef Special Non-Veg Thali',
+  description:
+    'A grand chef-curated thali featuring signature chicken and mutton preparations, rice, Indian breads, salad, papad and traditional accompaniments.',
+  price: 580,
+  category: 'punjabi',
+  image: '/MenuImages/TFK_CHEF_SPL_NON_VEG_THALI.png',
+  tags: ['Chef Special', 'Premium Non-Veg'],
+  signature: true,
+  spicy: true,
+},
+
+{
+  id: 'maharashtrian-chicken-thali',
+  name: 'Maharashtrian Chicken Thali',
+  description:
+    'A traditional Maharashtrian feast featuring Chicken Sukka, Chicken Rassa, bhakri, chapati, Indrayani rice, boiled egg, papad and authentic regional accompaniments.',
+  price: 415,
+  category: 'maharashtrian',
+  image: '/MenuImages/Maharashtrian Chicken Thali.png',
+  tags: ['Traditional Thali', 'Chicken Special'],
+  spicy: true,
+},
+
+{
+  id: 'maharashtrian-mutton-thali',
+  name: 'Maharashtrian Mutton Thali',
+  description:
+    'An authentic Maharashtrian thali served with Mutton Sukka, Mutton Rassa, bhakri, chapati, Indrayani rice, boiled egg and traditional accompaniments.',
+  price: 490,
+  category: 'maharashtrian',
+  image: '/MenuImages/Maharashtrian Chicken Thali.png',
+  tags: ['Traditional Thali', 'Mutton Special'],
+  spicy: true,
+},
+
+{
+  id: 'maharashtrian-special-chicken-thali',
+  name: 'Maharashtrian Special Chicken Thali',
+  description:
+    'Our premium chicken thali featuring Chicken Sukka, Chicken Rassa, Chicken Kheema, boiled egg, bhakri, chapati, Indrayani rice and signature Maharashtrian accompaniments.',
+  price: 460,
+  category: 'maharashtrian',
+  image: '/MenuImages/Maharashtrian Chicken Thali.png',
+  tags: ['Chef Recommended', 'Premium Thali'],
+  signature: true,
+  spicy: true,
+},
+
+{
+  id: 'maharashtrian-special-mutton-thali',
+  name: 'Maharashtrian Special Mutton Thali',
+  description:
+    'A grand Maharashtrian feast featuring Mutton Sukka, Mutton Rassa, Mutton Kheema, bhakri, chapati, Indrayani rice, boiled egg and authentic village-style accompaniments.',
+  price: 535,
+  category: 'maharashtrian',
+  image: '/MenuImages/Maharashtrian Chicken Thali.png',
+  tags: ['Premium Thali', 'Chef Special'],
+  signature: true,
+  spicy: true,
+},
+
+
+
+{
+  id: 'chicken-sukka',
+  name: 'Chicken Sukka',
+  description:
+    'A traditional Maharashtrian delicacy featuring tender chicken slow-cooked with roasted coconut, onions and aromatic village-style spices.',
+  price: 380,
+  category: 'maharashtrian',
+  image: '/MenuImages/Chicken Sukka.png',
+  tags: ['Maharashtrian Special', 'Best Seller'],
+  signature: true,
+  spicy: true,
+},
+
+{
+  id: 'chicken-rassa',
+  name: 'Chicken Rassa',
+  description:
+    'A fiery Maharashtrian chicken curry prepared in a rich red gravy infused with authentic Kolhapuri spices.',
+  price: 390,
+  category: 'maharashtrian',
+  image: '/MenuImages/Chicken Rasssa.png',
+  tags: ['Traditional', 'Spicy'],
+  signature: true,
+  spicy: true,
+},
+
+{
+  id: 'mutton-sukka',
+  name: 'Mutton Sukka',
+  description:
+    'Tender mutton slow-cooked with roasted coconut, fresh herbs and bold Maharashtrian spices for a rich dry preparation.',
+  price: 450,
+  category: 'maharashtrian',
+  image: '/MenuImages/Chicken Sukka.png',
+  tags: ['Mutton Special', 'Traditional'],
+  signature: true,
+  spicy: true,
+},
+
+{
+  id: 'mutton-rassa',
+  name: 'Mutton Rassa',
+  description:
+    'An authentic Maharashtrian mutton curry served in a spicy, flavour-packed red gravy made with traditional regional masalas.',
+  price: 490,
+  category: 'maharashtrian',
+  image: '/MenuImages/Chicken Rasssa.png',
+  tags: ['Mutton Special', 'Spicy'],
+  signature: true,
+  spicy: true,
+},
+
+{
+  id: 'jeera-aloo',
+  name: 'Jeera Aloo',
+  description:
+    'Golden potatoes sautéed with roasted cumin seeds, fresh herbs and traditional North Indian spices.',
+  price: 240,
+  category: 'punjabi',
+  image: '/MenuImages/Jeera Aloo.png',
+  tags: ['Classic', 'Homestyle'],
+  veg: true,
+},
+
+{
+  id: 'aloo-gobi',
+  name: 'Aloo Gobi',
+  description:
+    'A comforting combination of potatoes and cauliflower cooked with aromatic Punjabi spices.',
+  price: 250,
+  category: 'punjabi',
+  image: '/MenuImages/Aloo Gobi.png',
+  tags: ['Traditional', 'Vegetarian'],
+  veg: true,
+},
+
+{
+  id: 'aloo-mutter',
+  name: 'Aloo Mutter',
+  description:
+    'Tender potatoes and green peas simmered in a flavorful tomato-onion gravy.',
+  price: 260,
+  category: 'punjabi',
+  image: '/MenuImages/Aloo Gobi.png',
+  tags: ['Classic', 'Comfort Food'],
+  veg: true,
+},
+
+{
+  id: 'dum-aloo',
+  name: 'Dum Aloo',
+  description:
+    'Baby potatoes slow-cooked in a rich and aromatic gravy infused with traditional spices.',
+  price: 280,
+  category: 'punjabi',
+  image: '/MenuImages/Aloo Gobi.png',
+  tags: ['Slow Cooked', 'Traditional'],
+  veg: true,
+},
+
+{
+  id: 'veg-handi',
+  name: 'Veg Handi',
+  description:
+    'A rich medley of fresh vegetables cooked in a traditional handi-style gravy.',
+  price: 290,
+  category: 'punjabi',
+  image: '/MenuImages/Veg Handi.png',
+  tags: ['Handi Special', 'Popular'],
+  veg: true,
+},
+
+{
+  id: 'veg-lajawab',
+  name: 'Veg Lajawab',
+  description:
+    'An indulgent vegetable preparation cooked in a creamy and flavorful chef-special gravy.',
+  price: 300,
+  category: 'punjabi',
+  image: '/MenuImages/Veg Lajawab.png',
+  tags: ['Chef Special', 'Rich'],
+  veg: true,
+},
+
+{
+  id: 'veg-kolhapuri',
+  name: 'Veg Kolhapuri',
+  description:
+    'Mixed vegetables cooked in a fiery Kolhapuri-style gravy packed with bold spices.',
+  price: 300,
+  category: 'punjabi',
+  image: '/MenuImages/Veg Lajawab.png',
+  tags: ['Spicy', 'Popular'],
+  veg: true,
+  spicy: true,
+},
+
+{
+  id: 'veg-maratha',
+  name: 'Veg Maratha',
+  description:
+    'A flavorful blend of vegetables prepared in a spicy Maharashtrian-inspired gravy.',
+  price: 300,
+  category: 'punjabi',
+  image: '/MenuImages/Veg Lajawab.png',
+  tags: ['Spicy', 'Chef Recommended'],
+  veg: true,
+  spicy: true,
+},
+
+{
+  id: 'veg-jalfrezi',
+  name: 'Veg Jalfrezi',
+  description:
+    'Fresh vegetables tossed with onions, capsicum and tangy tomato-based spices.',
+  price: 290,
+  category: 'punjabi',
+  image: '/MenuImages/Veg Lajawab.png',
+  tags: ['Tangy', 'Classic'],
+  veg: true,
+},
+
+{
+  id: 'veg-hyderabadi',
+  name: 'Veg Hyderabadi',
+  description:
+    'A royal vegetable curry prepared with rich spices and authentic Hyderabadi flavors.',
+  price: 310,
+  category: 'punjabi',
+  image: '/MenuImages/Veg Lajawab.png',
+  tags: ['Royal', 'Rich'],
+  veg: true,
+},
+
+{
+  id: 'veg-kadhai',
+  name: 'Veg Kadhai',
+  description:
+    'Seasonal vegetables cooked in freshly ground kadhai masala with onions and capsicum.',
+  price: 300,
+  category: 'punjabi',
+  image: '/MenuImages/Veg Lajawab.png',
+  tags: ['Kadhai Special', 'Popular'],
+  veg: true,
+},
+
+{
+  id: 'mutter-paneer',
+  name: 'Mutter Paneer',
+  description:
+    'Soft paneer cubes and green peas simmered in a rich tomato-onion gravy.',
+  price: 320,
+  category: 'punjabi',
+  image: '/MenuImages/Mutter Panner.png',
+  tags: ['Paneer Special', 'Classic'],
+  veg: true,
+},
+
+{
+  id: 'veg-kofta',
+  name: 'Veg Kofta',
+  description:
+    'Delicate vegetable dumplings served in a rich and creamy North Indian gravy.',
+  price: 320,
+  category: 'punjabi',
+  image: '/MenuImages/Veg Kofta.png',
+  tags: ['Creamy', 'Popular'],
+  veg: true,
+},
+
+
+
+{
+  id: 'paneer-kadhai',
+  name: 'Paneer Kadhai',
+  description:
+    'Cottage cheese cooked with bell peppers in a freshly ground kadhai masala.',
+  price: 320,
+  category: 'punjabi',
+  image: '/MenuImages/Panner.png',
+  tags: ['Bestseller', 'Kadhai Special'],
+  veg: true,
+  signature: true,
+},
+
+{
+  id: 'paneer-khurchan',
+  name: 'Paneer Khurchan',
+  description:
+    'Shredded paneer tossed with onions, capsicum and aromatic North Indian spices.',
+  price: 330,
+  category: 'punjabi',
+  image: '/MenuImages/Panner.png',
+  tags: ['Chef Special', 'Popular'],
+  veg: true,
+},
+
+{
+  id: 'paneer-lasooni',
+  name: 'Paneer Lasooni',
+  description:
+    'Paneer cubes cooked in a rich garlic-infused gravy with authentic Punjabi flavors.',
+  price: 320,
+  category: 'punjabi',
+  image: '/MenuImages/Panner.png',
+  tags: ['Garlic Special'],
+  veg: true,
+},
+
+{
+  id: 'palak-paneer',
+  name: 'Palak Paneer',
+  description:
+    'Fresh cottage cheese simmered in a creamy spinach gravy seasoned with traditional spices.',
+  price: 320,
+  category: 'punjabi',
+  image: '/MenuImages/Palak Panner.png',
+  tags: ['Healthy', 'Popular'],
+  veg: true,
+},
+
+{
+  id: 'paneer-tikka-masala',
+  name: 'Paneer Tikka Masala',
+  description:
+    'Char-grilled paneer tikka finished in a rich tomato-onion masala gravy.',
+  price: 340,
+  category: 'punjabi',
+  image: '/MenuImages/Panner.png',
+  tags: ['Tandoori', 'Popular'],
+  veg: true,
+},
+
+{
+  id: 'dal-fry',
+  name: 'Dal Fry',
+  description:
+    'A comforting Punjabi classic made with yellow lentils tempered with onions, tomatoes and aromatic spices.',
+  price: 220,
+  category: 'punjabi',
+  image: '/MenuImages/Dal Fry.png',
+  tags: ['Punjabi Classic', 'Comfort Food'],
+  veg: true,
+},
+
+{
+  id: 'dal-tadka',
+  name: 'Dal Tadka',
+  description:
+    'Slow-cooked lentils finished with a sizzling tempering of cumin, garlic and traditional Punjabi spices.',
+  price: 240,
+  category: 'punjabi',
+  image: '/MenuImages/Dal Fry.png',
+  tags: ['Traditional', 'Popular'],
+  veg: true,
+},
+
+{
+  id: 'lasooni-dal-tadka',
+  name: 'Lasooni Dal Tadka',
+  description:
+    'Rich lentils infused with roasted garlic and topped with a flavorful tadka for a bold Punjabi taste.',
+  price: 260,
+  category: 'punjabi',
+  image: '/MenuImages/Dal Fry.png',
+  tags: ['Garlic Special', 'Chef Recommended'],
+  veg: true,
+  signature: true,
+},
+
+{
+  id: 'paneer-bhurji',
+  name: 'Paneer Bhurji',
+  description:
+    'Crumbled paneer sautéed with onions, tomatoes and aromatic Indian spices.',
+  price: 290,
+  category: 'punjabi',
+  image: '/MenuImages/Panner Burgi.png',
+  tags: ['Homestyle', 'Protein Rich'],
+  veg: true,
+},
+
+{
+  id: 'kaju-masala',
+  name: 'Kaju Masala',
+  description:
+    'Premium cashews cooked in a rich and creamy tomato-based gravy.',
+  price: 350,
+  category: 'punjabi',
+  image: '/MenuImages/Kaju Masala.png',
+  tags: ['Premium', 'Rich'],
+  veg: true,
+},
+
+{
+  id: 'mushroom-do-pyaza',
+  name: 'Mushroom Do Pyaza',
+  description:
+    'Fresh mushrooms cooked with double onions in a flavorful Punjabi-style gravy.',
+  price: 320,
+  category: 'punjabi',
+  image: '/MenuImages/mushroom-do-pyaza.png',
+  tags: ['Mushroom Special'],
+  veg: true,
+},
+
+{
+  id: 'malai-kofta',
+  name: 'Malai Kofta',
+  description:
+    'Soft paneer and potato dumplings served in a luxurious creamy cashew gravy.',
+  price: 330,
+  category: 'punjabi',
+  image: '/MenuImages/Malai Kofta.png',
+  tags: ['Creamy', 'Popular'],
+  veg: true,
+},
+
+{
+  id: 'paneer-butter-masala',
+  name: 'Paneer Butter Masala',
+  description:
+    'Soft paneer cubes simmered in a rich tomato-butter gravy finished with cream and aromatic spices.',
+  price: 330,
+  category: 'punjabi',
+  image: '/MenuImages/Panner.png',
+  tags: ['Bestseller', 'Creamy'],
+  veg: true,
+  signature: true,
+},
+
+{
+  id: 'butter-chicken',
+  name: 'Butter Chicken',
+  description:
+    'Tender tandoori chicken simmered in a velvety tomato-butter gravy enriched with cream and aromatic spices.',
+  price: 420,
+  category: 'punjabi',
+  image: '/MenuImages/Butter Chicken.png',
+  tags: ['Bestseller', 'Creamy'],
+  signature: true,
+},
+
+{
+  id: 'chicken-tikka-masala',
+  name: 'Chicken Tikka Masala',
+  description:
+    'Juicy chicken tikka cooked in a rich tomato-onion gravy with authentic Punjabi flavors.',
+  price: 430,
+  category: 'punjabi',
+  image: '/MenuImages/Chicken Tikka Masala.png',
+  tags: ['Tandoori', 'Popular'],
+  spicy: true,
+},
+
+{
+  id: 'chicken-bhuna',
+  name: 'Chicken Bhuna',
+  description:
+    'Chicken slow-cooked with onions, tomatoes and roasted spices for a rich and intensely flavorful curry.',
+  price: 420,
+  category: 'punjabi',
+  image: '/MenuImages/Chicken Tikka Masala.png',
+  tags: ['Roasted Spices', 'Traditional'],
+  spicy: true,
+},
+
+{
+  id: 'angari-murgh-masala',
+  name: 'Angari Murgh Masala',
+  description:
+    'Smoky chicken cooked in a fiery Angara-style gravy infused with roasted spices and bold flavors.',
+  price: 440,
+  category: 'punjabi',
+  image: '/MenuImages/Angari Murgh Masala.png',
+  tags: ['Smoky', 'Chef Special'],
+  signature: true,
+  spicy: true,
+},
+
+{
+  id: 'chicken-kadhai',
+  name: 'Chicken Kadhai',
+  description:
+    'Tender chicken tossed with capsicum and onions in a freshly ground kadhai masala.',
+  price: 430,
+  category: 'punjabi',
+  image: '/MenuImages/Chicken Kadhai.png',
+  tags: ['Kadhai Special', 'Popular'],
+  spicy: true,
+},
+
+{
+  id: 'chicken-kheema',
+  name: 'Chicken Kheema',
+  description:
+    'Minced chicken cooked with onions, tomatoes and aromatic spices for a hearty Punjabi delicacy.',
+  price: 390,
+  category: 'punjabi',
+  image: '/MenuImages/Chicken Kheema.png',
+  tags: ['Protein Rich', 'Traditional'],
+  spicy: true,
+},
+
+{
+  id: 'chicken-handi',
+  name: 'Chicken Handi',
+  description:
+    'Chicken slow-cooked in a traditional handi with rich gravy, fresh herbs and flavorful spices.',
+  price: 440,
+  category: 'punjabi',
+  image: '/MenuImages/Chicken Handi.png',
+  tags: ['Handi Special', 'Traditional'],
+  spicy: true,
+},
+
+{
+  id: 'murgh-lajawab',
+  name: 'Murgh Lajawab',
+  description:
+    'A chef-special chicken preparation cooked in a rich creamy gravy with royal spices and premium ingredients.',
+  price: 450,
+  category: 'punjabi',
+  image: '/MenuImages/Murgh Lajawab.png',
+  tags: ['Chef Special', 'Premium'],
+  signature: true,
+  spicy: true,
+},
+
+{
+  id: 'mutton-rogan-josh',
+  name: 'Mutton Rogan Josh',
+  description:
+    'Slow-cooked tender mutton in a fragrant Kashmiri-style gravy with whole spices and rich flavors.',
+  price: 520,
+  category: 'punjabi',
+  image: '/MenuImages/Mutton Rogan Josh.png',
+  tags: ['Bestseller', 'Slow Cooked'],
+  signature: true,
+  spicy: true,
+},
+
+{
+  id: 'mutton-handi',
+  name: 'Mutton Handi',
+  description:
+    'Tender mutton simmered in a traditional handi with aromatic spices and a rich flavorful gravy.',
+  price: 540,
+  category: 'punjabi',
+  image: '/MenuImages/Mutton Handi.png',
+  tags: ['Handi Special', 'Premium'],
+  spicy: true,
+},
+
+{
+  id: 'mutton-kheema',
+  name: 'Mutton Kheema',
+  description:
+    'Finely minced mutton cooked with onions, tomatoes and traditional spices for a flavorful delicacy.',
+  price: 460,
+  category: 'punjabi',
+  image: '/MenuImages/Mutton Kheema.png',
+  tags: ['Traditional', 'Protein Rich'],
+  spicy: true,
+},
+
+{
+  id: 'murgh-musallam',
+  name: 'Murgh Musallam',
+  description:
+    'A royal Mughlai-inspired chicken delicacy cooked in a rich cashew gravy with aromatic spices and luxurious flavors.',
+  price: 550,
+  category: 'punjabi',
+  image: '/MenuImages/Murgh Musallam.png',
+  tags: ['Royal Recipe', 'Signature'],
+  signature: true,
+  spicy: true,
+},
+
+
+//chinese starters
+
+{
+  id: 'veg-manchurian-dry',
+  name: 'Veg Manchurian Dry',
+  description:
+    'Crispy vegetable dumplings tossed in a flavorful Indo-Chinese sauce with garlic, spring onions and aromatic spices.',
+  price: 260,
+  category: 'starters',
+  image: '/MenuImages/Veg Manchurian Dry.png',
+  tags: ['Indo-Chinese', 'Popular'],
+  veg: true,
+  spicy: true,
+},
+
+{
+  id: 'veg-65',
+  name: 'Veg 65',
+  description:
+    'Crunchy vegetable bites coated in a spicy South Indian-style seasoning and fried to perfection.',
+  price: 250,
+  category: 'starters',
+  image: '/MenuImages/Veg 65.png',
+  tags: ['Crispy', 'Spicy'],
+  veg: true,
+  spicy: true,
+},
+
+{
+  id: 'paneer-chilli-dry',
+  name: 'Paneer Chilli Dry',
+  description:
+    'Soft paneer cubes stir-fried with onions, capsicum and spicy chilli sauce for a bold Indo-Chinese flavor.',
+  price: 310,
+  category: 'starters',
+  image: '/MenuImages/Panner Chilly Dry.png',
+  tags: ['Paneer Special', 'Chinese'],
+  veg: true,
+  spicy: true,
+},
+
+{
+  id: 'honey-chilli-potatoes',
+  name: 'Honey Chilli Potatoes',
+  description:
+    'Crispy potato fingers tossed in a sweet and spicy honey chilli glaze with sesame and spring onions.',
+  price: 270,
+  category: 'starters',
+  image: '/MenuImages/Honey Chilli Potatoes.png',
+  tags: ['Sweet & Spicy', 'Popular'],
+  veg: true,
+},
+
+{
+  id: 'paneer-65',
+  name: 'Paneer 65',
+  description:
+    'Crispy paneer cubes coated in a fiery blend of spices and herbs for a deliciously spicy starter.',
+  price: 320,
+  category: 'starters',
+  image: '/MenuImages/Panner 65.png',
+  tags: ['Paneer Special', 'South Indian Style'],
+  veg: true,
+  spicy: true,
+},
+
+{
+  id: 'mushroom-chilli',
+  name: 'Mushroom Chilli',
+  description:
+    'Fresh mushrooms tossed with onions, capsicum and spicy chilli sauce for an irresistible Indo-Chinese delight.',
+  price: 310,
+  category: 'starters',
+  image: '/MenuImages/Mushroom Chilli.png',
+  tags: ['Mushroom Special', 'Chinese'],
+  veg: true,
+  spicy: true,
+},
+
+{
+  id: 'paneer-crispy',
+  name: 'Paneer Crispy',
+  description:
+    'Golden-fried paneer strips tossed with crunchy vegetables and chef-special spicy sauces.',
+  price: 330,
+  category: 'starters',
+  image: '/MenuImages/Panner Chilly Dry.png',
+  tags: ['Crispy', 'Chef Special'],
+  veg: true,
+  signature: true,
+  spicy: true,
+},
+
+{
+  id: 'veg-crispy',
+  name: 'Veg Crispy',
+  description:
+    'Crispy fried vegetables tossed in a flavorful blend of spicy sauces, garlic, and fresh spring onions for the perfect crunchy starter.',
+  price: 280,
+  category: 'starters',
+  image: '/MenuImages/Veg Crispy.png',
+  tags: ['Crispy', 'Chinese Special'],
+  veg: true,
+  signature: true,
+  spicy: true,
+},
+
+{
+  id: 'chicken-tandoor',
+  name: 'Chicken Tandoor',
+  description:
+    'Whole chicken marinated in yogurt, aromatic spices and roasted to perfection in a traditional clay tandoor.',
+  price: 480,
+  category: 'kebabs',
+  image: '/MenuImages/Chicken tandoor.png',
+  tags: ['Tandoor Special', 'Bestseller'],
+  signature: true,
+  spicy: true,
+},
+
+{
+  id: 'chicken-tikka',
+  name: 'Chicken Tikka',
+  description:
+    'Succulent boneless chicken marinated in traditional spices and char-grilled in the tandoor for smoky perfection.',
+  price: 420,
+  category: 'kebabs',
+  image: '/MenuImages/Chicken tikka.png',
+  tags: ['Tandoori', 'Popular'],
+  signature: true,
+  spicy: true,
+},
+
+{
+  id: 'chicken-banjara-tikka',
+  name: 'Chicken Banjara Tikka',
+  description:
+    'Tender chicken pieces marinated with fresh herbs, green spices and yogurt, grilled for a rich rustic flavor.',
+  price: 450,
+  category: 'kebabs',
+  image: '/MenuImages/Chicken tikka.png',
+  tags: ['Herb Marinated', 'Chef Special'],
+  spicy: true,
+},
+
+{
+  id: 'chicken-lasooni-tikka',
+  name: 'Chicken Lasooni Tikka',
+  description:
+    'Juicy chicken tikka infused with roasted garlic, aromatic spices and cooked in a traditional tandoor.',
+  price: 450,
+  category: 'kebabs',
+  image: '/MenuImages/Chicken tikka.png',
+  tags: ['Garlic Special', 'Tandoori'],
+  spicy: true,
+},
+
+{
+  id: 'chicken-malai-tikka',
+  name: 'Chicken Malai Tikka',
+  description:
+    'Tender chicken marinated in cream, cheese and mild spices, delivering a rich and melt-in-the-mouth experience.',
+  price: 460,
+  category: 'kebabs',
+  image: '/MenuImages/Chicken Malai Tikka.png',
+  tags: ['Creamy', 'Premium'],
+  signature: true,
+},
+
+{
+  id: 'chicken-seekh-kebab',
+  name: 'Chicken Seekh Kebab',
+  description:
+    'Minced chicken blended with herbs and spices, skewered and grilled in the tandoor for a smoky finish.',
+  price: 430,
+  category: 'kebabs',
+  image: '/MenuImages/Chicken Seekh Kebab.png',
+  tags: ['Seekh Kebab', 'Tandoori'],
+  spicy: true,
+},
+
+{
+  id: 'mutton-seekh-kebab',
+  name: 'Mutton Seekh Kebab',
+  description:
+    'Premium minced mutton seasoned with traditional spices, skewered and charcoal grilled to perfection.',
+  price: 520,
+  category: 'kebabs',
+  image: '/MenuImages/Chicken Seekh Kebab.png',
+  tags: ['Premium', 'Seekh Kebab'],
+  signature: true,
+  spicy: true,
+},
+
+{
+  id: 'veg-manchurian-gravy',
+  name: 'Veg Manchurian Gravy',
+  description:
+    'Soft vegetable dumplings simmered in a rich Indo-Chinese gravy infused with garlic, ginger and flavorful sauces.',
+  price: 280,
+  category: 'chinese',
+  image: '/MenuImages/Veg Manchurian Gravy.png',
+  tags: ['Chinese Special', 'Popular'],
+  veg: true,
+  spicy: true,
+},
+
+{
+  id: 'paneer-manchurian-gravy',
+  name: 'Paneer Manchurian Gravy',
+  description:
+    'Crispy paneer cubes tossed in a savory Indo-Chinese gravy with garlic, spring onions and aromatic seasonings.',
+  price: 330,
+  category: 'chinese',
+  image: '/MenuImages/Panner Manchurian Gravy.png',
+  tags: ['Paneer Special', 'Chinese'],
+  veg: true,
+  spicy: true,
+},
+
+{
+  id: 'paneer-chilli-gravy',
+  name: 'Paneer Chilli Gravy',
+  description:
+    'Tender paneer cooked with onions, capsicum and spicy chilli sauce in a rich and flavorful gravy.',
+  price: 330,
+  category: 'chinese',
+  image: '/MenuImages/Panner Manchurian Gravy.png',
+  tags: ['Chinese Special', 'Bestseller'],
+  veg: true,
+  signature: true,
+  spicy: true,
+},
+{
+  id: 'chicken-manchurian-gravy',
+  name: 'Chicken Manchurian Gravy',
+  description:
+    'Juicy chicken dumplings cooked in a rich Indo-Chinese gravy infused with garlic, ginger and flavorful sauces.',
+  price: 340,
+  category: 'chinese',
+  image: '/MenuImages/Chicken Manchurian Gravy.png',
+  tags: ['Chinese Special', 'Popular'],
+  signature: true,
+  spicy: true,
+},
+
+{
+  id: 'chicken-chilli-gravy',
+  name: 'Chicken Chilli Gravy',
+  description:
+    'Tender chicken pieces tossed with onions, capsicum and spicy chilli sauce in a flavorful Indo-Chinese gravy.',
+  price: 350,
+  category: 'chinese',
+  image: '/MenuImages/Chicken Manchurian Gravy.png',
+  tags: ['Bestseller', 'Chinese Special'],
+  signature: true,
+  spicy: true,
+},
+
+//chinese rice & noodles 
+
+{
+  id: 'veg-fried-rice',
+  name: 'Veg Fried Rice',
+  description:
+    'Wok-tossed rice cooked with fresh vegetables, spring onions and classic Indo-Chinese seasonings.',
+  price: 240,
+  category: 'chinese',
+  image: '/MenuImages/Veg Fried Rice.png',
+  tags: ['Chinese Special', 'Popular'],
+  veg: true,
+},
+
+{
+  id: 'veg-schezwan-fried-rice',
+  name: 'Veg Schezwan Fried Rice',
+  description:
+    'Spicy fried rice tossed with vegetables and fiery Schezwan sauce for bold Indo-Chinese flavors.',
+  price: 260,
+  category: 'chinese',
+  image: '/MenuImages/Veg Fried Rice.png',
+  tags: ['Schezwan', 'Spicy'],
+  veg: true,
+  spicy: true,
+},
+
+{
+  id: 'veg-triple-fried-rice',
+  name: 'Veg Triple Fried Rice',
+  description:
+    'A hearty combination of fried rice, noodles and spicy gravy served together for the ultimate Chinese feast.',
+  price: 300,
+  category: 'chinese',
+  image: '/MenuImages/Veg Fried Rice.png',
+  tags: ['Triple Rice', 'Bestseller'],
+  veg: true,
+  signature: true,
+  spicy: true,
+},
+
+{
+  id: 'veg-hakka-noodles',
+  name: 'Veg Hakka Noodles',
+  description:
+    'Classic wok-tossed noodles loaded with fresh vegetables and authentic Indo-Chinese flavors.',
+  price: 240,
+  category: 'chinese',
+  image: '/MenuImages/Hakka Noodles.png',
+  tags: ['Noodles', 'Popular'],
+  veg: true,
+},
+
+{
+  id: 'veg-schezwan-noodles',
+  name: 'Veg Schezwan Noodles',
+  description:
+    'Spicy Hakka noodles tossed with vegetables and signature Schezwan sauce.',
+  price: 260,
+  category: 'chinese',
+  image: '/MenuImages/Hakka Noodles.png',
+  tags: ['Schezwan', 'Spicy'],
+  veg: true,
+  spicy: true,
+},
+
+{
+  id: 'chicken-fried-rice',
+  name: 'Chicken Fried Rice',
+  description:
+    'Flavorful fried rice stir-fried with tender chicken pieces, vegetables and Chinese seasonings.',
+  price: 290,
+  category: 'chinese',
+  image: '/MenuImages/Veg Fried Rice.png',
+  tags: ['Chicken Special', 'Popular'],
+},
+
+{
+  id: 'chicken-schezwan-fried-rice',
+  name: 'Chicken Schezwan Fried Rice',
+  description:
+    'Chicken fried rice infused with fiery Schezwan sauce and aromatic spices.',
+  price: 310,
+  category: 'chinese',
+  image: '/MenuImages/Veg Fried Rice.png',
+  tags: ['Chicken Special', 'Schezwan'],
+  spicy: true,
+},
+
+{
+  id: 'chicken-triple-fried-rice',
+  name: 'Chicken Triple Fried Rice',
+  description:
+    'A satisfying combination of chicken fried rice, noodles and spicy chicken gravy served together.',
+  price: 350,
+  category: 'chinese',
+  image: '/MenuImages/Veg Fried Rice.png',
+  tags: ['Bestseller', 'Triple Rice'],
+  signature: true,
+  spicy: true,
+},
+
+{
+  id: 'chicken-hakka-noodles',
+  name: 'Chicken Hakka Noodles',
+  description:
+    'Wok-tossed noodles loaded with juicy chicken, vegetables and flavorful sauces.',
+  price: 290,
+  category: 'chinese',
+  image: '/MenuImages/Hakka Noodles.png',
+  tags: ['Chicken Special', 'Noodles'],
+},
+
+{
+  id: 'chicken-schezwan-noodles',
+  name: 'Chicken Schezwan Noodles',
+  description:
+    'Chicken noodles tossed in spicy Schezwan sauce with fresh vegetables and herbs.',
+  price: 310,
+  category: 'chinese',
+  image: '/MenuImages/Hakka Noodles.png',
+  tags: ['Schezwan', 'Chicken Special'],
+  spicy: true,
+},
+
+{
+  id: 'egg-hakka-noodles',
+  name: 'Egg Hakka Noodles',
+  description:
+    'Classic Hakka noodles stir-fried with egg, vegetables and signature Chinese flavors.',
+  price: 260,
+  category: 'chinese',
+  image: '/MenuImages/Hakka Noodles.png',
+  tags: ['Egg Special', 'Noodles'],
+},
+
+{
+  id: 'egg-schezwan-noodles',
+  name: 'Egg Schezwan Noodles',
+  description:
+    'Spicy egg noodles tossed with Schezwan sauce and fresh vegetables.',
+  price: 280,
+  category: 'chinese',
+  image: '/MenuImages/Hakka Noodles.png',
+  tags: ['Egg Special', 'Schezwan'],
+  spicy: true,
+},
+
+{
+  id: 'egg-fried-rice',
+  name: 'Egg Fried Rice',
+  description:
+    'Wok-fried rice cooked with scrambled eggs, vegetables and aromatic Chinese seasonings.',
+  price: 260,
+  category: 'chinese',
+  image: '/MenuImages/Veg Fried Rice.png',
+  tags: ['Egg Special', 'Popular'],
+},
+
+{
+  id: 'egg-schezwan-fried-rice',
+  name: 'Egg Schezwan Fried Rice',
+  description:
+    'Egg fried rice tossed with spicy Schezwan sauce and flavorful Indo-Chinese spices.',
+  price: 280,
+  category: 'chinese',
+  image: '/MenuImages/Veg Fried Rice.png',
+  tags: ['Egg Special', 'Schezwan'],
+  spicy: true,
+},
+
+{
+  id: 'chicken-manchow-soup',
+  name: 'Chicken Manchow Soup',
+  description:
+    'A hearty Indo-Chinese soup loaded with shredded chicken, vegetables, garlic and topped with crispy noodles.',
+  price: 180,
+  category: 'soups',
+  image: '/MenuImages/Veg Manchow Soup.png',
+  tags: ['Chicken Special', 'Popular'],
+  signature: true,
+  spicy: true,
+},
+
+{
+  id: 'chicken-hot-and-sour-soup',
+  name: 'Chicken Hot & Sour Soup',
+  description:
+    'A bold and flavorful soup combining shredded chicken, vegetables and a perfect balance of spicy and tangy flavors.',
+  price: 180,
+  category: 'soups',
+  image: '/MenuImages/Veg Manchow Soup.png',
+  tags: ['Spicy', 'Chinese Special'],
+  spicy: true,
+},
+
+{
+  id: 'chicken-lemon-coriander-soup',
+  name: 'Chicken Lemon Coriander Soup',
+  description:
+    'A light and refreshing soup infused with tender chicken, fresh coriander and a hint of lemon.',
+  price: 180,
+  category: 'soups',
+  image: '/MenuImages/Veg Manchow Soup.png',
+  tags: ['Refreshing', 'Healthy'],
+},
+
+{
+  id: 'chicken-sweet-corn-soup',
+  name: 'Chicken Sweet Corn Soup',
+  description:
+    'A comforting soup made with shredded chicken, sweet corn and a rich flavorful broth.',
+  price: 180,
+  category: 'soups',
+  image: '/MenuImages/Veg Manchow Soup.png',
+  tags: ['Comfort Food', 'Popular'],
+},
+
+{
+  id: 'veg-manchow-soup',
+  name: 'Veg Manchow Soup',
+  description:
+    'A delicious vegetable soup packed with fresh veggies, garlic and topped with crispy fried noodles.',
+  price: 160,
+  category: 'soups',
+  image: '/MenuImages/Veg Manchow Soup.png',
+  tags: ['Vegetarian', 'Popular'],
+  veg: true,
+  spicy: true,
+},
+
+{
+  id: 'veg-hot-and-sour-soup',
+  name: 'Veg Hot & Sour Soup',
+  description:
+    'A spicy and tangy vegetable soup prepared with fresh vegetables and authentic Indo-Chinese seasonings.',
+  price: 160,
+  category: 'soups',
+  image: '/MenuImages/Veg Manchow Soup.png',
+  tags: ['Spicy', 'Chinese Special'],
+  veg: true,
+  spicy: true,
+},
+
+{
+  id: 'veg-lemon-coriander-soup',
+  name: 'Veg Lemon Coriander Soup',
+  description:
+    'A light and aromatic soup flavored with fresh coriander, vegetables and a refreshing touch of lemon.',
+  price: 160,
+  category: 'soups',
+  image: '/MenuImages/Veg Manchow Soup.png',
+  tags: ['Healthy', 'Refreshing'],
+  veg: true,
+},
+
+{
+  id: 'veg-sweet-corn-soup',
+  name: 'Veg Sweet Corn Soup',
+  description:
+    'A creamy and comforting soup made with sweet corn, fresh vegetables and delicate seasonings.',
+  price: 160,
+  category: 'soups',
+  image: '/MenuImages/Veg Manchow Soup.png',
+  tags: ['Comfort Food', 'Popular'],
+  veg: true,
+},
+
+{
+  id: 'cream-of-tomato-soup',
+  name: 'Cream of Tomato Soup',
+  description:
+    'A rich and velvety soup made with ripe tomatoes, fresh cream and aromatic herbs, offering a comforting classic flavor.',
+  price: 170,
+  category: 'soups',
+  image: '/MenuImages/Veg Manchow Soup.png',
+  tags: ['Creamy', 'Classic'],
+  veg: true,
+},
+
+{
+  id: 'cream-of-mushroom-soup',
+  name: 'Cream of Mushroom Soup',
+  description:
+    'A smooth and creamy mushroom soup prepared with fresh mushrooms, cream and delicate seasonings for a rich savory taste.',
+  price: 180,
+  category: 'soups',
+  image: '/MenuImages/Veg Manchow Soup.png',
+  tags: ['Creamy', 'Mushroom Special'],
+  veg: true,
+  signature: true,
+},
+
+//raita and salads
+
+{
+  id: 'plain-curd',
+  name: 'Plain Curd',
+  description:
+    'Fresh homemade curd served chilled, offering a creamy and refreshing accompaniment to any meal.',
+  price: 60,
+  category: 'salads',
+  image: '/MenuImages/Plain Curd.png',
+  tags: ['Refreshing', 'Traditional'],
+  veg: true,
+},
+
+{
+  id: 'green-salad',
+  name: 'Green Salad',
+  description:
+    'A healthy mix of fresh cucumber, tomato, onion, carrot and seasonal vegetables served with lemon.',
+  price: 90,
+  category: 'salads',
+  image: '/MenuImages/Green Salad.png',
+  tags: ['Fresh', 'Healthy'],
+  veg: true,
+},
+
+{
+  id: 'veg-raita',
+  name: 'Veg Raita',
+  description:
+    'Creamy curd blended with fresh vegetables and mild seasonings for a refreshing side dish.',
+  price: 90,
+  category: 'salads',
+  image: '/MenuImages/Raita.png',
+  tags: ['Cooling', 'Popular'],
+  veg: true,
+},
+
+{
+  id: 'pineapple-raita',
+  name: 'Pineapple Raita',
+  description:
+    'A delightful combination of chilled curd and juicy pineapple, balancing sweetness and freshness perfectly.',
+  price: 110,
+  category: 'salads',
+  image: '/MenuImages/Raita.png',
+  tags: ['Sweet & Refreshing', 'Chef Special'],
+  veg: true,
+},
+
+{
+  id: 'boondi-raita',
+  name: 'Boondi Raita',
+  description:
+    'Refreshing yogurt mixed with crispy boondi and lightly seasoned spices for a classic Indian accompaniment.',
+  price: 90,
+  category: 'salads',
+  image: '/MenuImages/Raita.png',
+  tags: ['Traditional', 'Popular'],
+  veg: true,
+},
+ //rice 
+
+ {
+  id: 'steam-rice',
+  name: 'Steam Rice',
+  description:
+    'Perfectly steamed aromatic rice, light and fluffy, ideal with curries, dals and traditional meals.',
+  price: 120,
+  category: 'rice',
+  image: '/MenuImages/Jeera Rice.png',
+  tags: ['Classic', 'Traditional'],
+  veg: true,
+},
+
+{
+  id: 'jeera-rice',
+  name: 'Jeera Rice',
+  description:
+    'Fragrant basmati rice tempered with roasted cumin seeds and aromatic spices.',
+  price: 170,
+  category: 'rice',
+  image: '/MenuImages/Jeera Rice.png',
+  tags: ['Popular', 'Rice Special'],
+  veg: true,
+},
+
+{
+  id: 'indrayani-rice',
+  name: 'Indrayani Rice',
+  description:
+    'Premium Maharashtrian Indrayani rice known for its soft texture and distinctive aroma.',
+  price: 150,
+  category: 'rice',
+  image: '/MenuImages/Jeera Rice.png',
+  tags: ['Maharashtrian Special'],
+  veg: true,
+},
+
+{
+  id: 'chicken-dum-biryani',
+  name: 'Chicken Dum Biryani',
+  description:
+    'Aromatic basmati rice layered with succulent chicken and slow-cooked using traditional dum techniques.',
+  price: 380,
+  category: 'rice',
+  image: '/MenuImages/Chicken Dum Biryani.png',
+  tags: ['Biryani', 'Bestseller'],
+  signature: true,
+  spicy: true,
+},
+
+{
+  id: 'chicken-tikka-biryani',
+  name: 'Chicken Tikka Biryani',
+  description:
+    'Flavorful biryani prepared with smoky chicken tikka, fragrant rice and aromatic spices.',
+  price: 420,
+  category: 'rice',
+  image: '/MenuImages/Chicken Dum Biryani.png',
+  tags: ['Tikka Special', 'Premium'],
+  signature: true,
+  spicy: true,
+},
+
+{
+  id: 'mutton-dum-biryani',
+  name: 'Mutton Dum Biryani',
+  description:
+    'Tender mutton layered with aromatic basmati rice and slow-cooked to perfection in traditional dum style.',
+  price: 480,
+  category: 'rice',
+  image: '/MenuImages/Chicken Dum Biryani.png',
+  tags: ['Premium', 'Bestseller'],
+  signature: true,
+  spicy: true,
+},
+
+{
+  id: 'egg-biryani',
+  name: 'Egg Biryani',
+  description:
+    'Fragrant biryani prepared with boiled eggs, aromatic basmati rice and traditional spices.',
+  price: 280,
+  category: 'rice',
+  image: '/MenuImages/Egg Biryani.png',
+  tags: ['Egg Special', 'Popular'],
+  spicy: true,
+},
+
+{
+  id: 'curd-rice',
+  name: 'Curd Rice',
+  description:
+    'A cooling South Indian-style rice preparation mixed with fresh curd and tempered with aromatic spices.',
+  price: 180,
+  category: 'rice',
+  image: '/MenuImages/Jeera Rice.png',
+  tags: ['Refreshing', 'Comfort Food'],
+  veg: true,
+},
+
+{
+  id: 'tadka-dal-khichadi',
+  name: 'Tadka Dal Khichadi',
+  description:
+    'A wholesome blend of rice and lentils topped with a flavorful garlic and cumin tadka.',
+  price: 220,
+  category: 'rice',
+  image: '/MenuImages/Dal Khichadi.png',
+  tags: ['Comfort Food', 'Homestyle'],
+  veg: true,
+},
+
+{
+  id: 'veg-pulao',
+  name: 'Veg Pulao',
+  description:
+    'Fragrant basmati rice cooked with seasonal vegetables and aromatic whole spices.',
+  price: 250,
+  category: 'rice',
+  image: '/MenuImages/Veg Biryani.png',
+  tags: ['Vegetarian', 'Popular'],
+  veg: true,
+},
+
+{
+  id: 'veg-dum-biryani',
+  name: 'Veg Dum Biryani',
+  description:
+    'Aromatic basmati rice layered with fresh vegetables and slow-cooked with traditional biryani spices.',
+  price: 290,
+  category: 'rice',
+  image: '/MenuImages/Veg Biryani.png',
+  tags: ['Biryani', 'Vegetarian'],
+  veg: true,
+},
+
+{
+  id: 'paneer-tikka-biryani',
+  name: 'Paneer Tikka Biryani',
+  description:
+    'Smoky paneer tikka layered with fragrant basmati rice and aromatic biryani spices.',
+  price: 340,
+  category: 'rice',
+  image: '/MenuImages/Panner Tikka Biryani.png',
+  tags: ['Paneer Special', 'Premium'],
+  veg: true,
+  signature: true,
+},
+
+//desserts
+
+{
+  id: 'shrikhand',
+  name: 'Shrikhand',
+  description:
+    'A traditional Maharashtrian dessert made from thickened yogurt, delicately flavored with saffron, cardamom and dry fruits.',
+  price: 120,
+  category: 'desserts',
+  image: '/MenuImages/Shrikhand.png',
+  tags: ['Traditional', 'Maharashtrian Special'],
+  veg: true,
+  signature: true,
+},
+
+{
+  id: 'rabdi',
+  name: 'Rabdi',
+  description:
+    'Rich and creamy sweetened milk dessert slow-cooked to perfection and garnished with nuts and saffron.',
+  price: 140,
+  category: 'desserts',
+  image: '/MenuImages/Rabdi.png',
+  tags: ['Rich', 'Traditional'],
+  veg: true,
+},
+
+{
+  id: 'gulab-jamun',
+  name: 'Gulab Jamun',
+  description:
+    'Soft milk-solid dumplings soaked in fragrant sugar syrup, served warm for a delightful sweet experience.',
+  price: 90,
+  category: 'desserts',
+  image: '/MenuImages/Gulab Jamun.png',
+  tags: ['Classic', 'Popular'],
+  veg: true,
+},
+
+{
+  id: 'shahi-tukda',
+  name: 'Shahi Tukda',
+  description:
+    'A royal Mughlai dessert featuring crispy fried bread soaked in rich rabdi and garnished with nuts.',
+  price: 160,
+  category: 'desserts',
+  image: '/MenuImages/Shahi Tukda.png',
+  tags: ['Royal', 'Premium'],
+  veg: true,
+  signature: true,
+},
+
+{
+  id: 'ice-cream',
+  name: 'Ice Cream',
+  description:
+    'A refreshing scoop of creamy ice cream available in a variety of delightful flavours.',
+  price: 80,
+  category: 'desserts',
+  image: '/MenuImages/IceCream.png',
+  tags: ['Chilled', 'Popular'],
+  veg: true,
+},
+
+{
+  id: 'kharwas',
+  name: 'Kharwas',
+  description:
+    'A traditional Maharashtrian milk pudding delicately flavored with cardamom and saffron, known for its soft texture.',
+  price: 130,
+  category: 'desserts',
+  image: '/MenuImages/Kharwas.png',
+  tags: ['Maharashtrian Special', 'Traditional'],
+  veg: true,
+  signature: true,
+},
+
+{
+  id: 'ukdiche-modak',
+  name: 'Ukdiche Modak',
+  description:
+    'Steamed rice flour dumplings filled with jaggery and coconut, prepared in authentic Maharashtrian style.',
+  price: 150,
+  category: 'desserts',
+  image: '/MenuImages/Ukdiche Modak.png',
+  tags: ['Ganpati Special', 'Traditional'],
+  veg: true,
+  signature: true,
+},
+
+{
+  id: 'puran-poli-with-ghee',
+  name: 'Puran Poli with Ghee',
+  description:
+    'A traditional sweet flatbread stuffed with jaggery and lentils, served generously with pure ghee.',
+  price: 120,
+  category: 'desserts',
+  image: '/MenuImages/Puran Poli.png',
+  tags: ['Maharashtrian Special', 'Best Seller'],
+  veg: true,
+  signature: true,
+},
+
+{
+  id: 'paan-bites',
+  name: 'Paan Bites',
+  description:
+    'Refreshing bite-sized paan treats filled with sweet and aromatic ingredients, perfect after a hearty meal.',
+  price: 90,
+  category: 'desserts',
+  image: '/MenuImages/Paan Bites.png',
+  tags: ['After Meal', 'Refreshing'],
+  veg: true,
+},
+
+//breads 
+{
+  id: 'wheat-roti',
+  name: 'Wheat Roti',
+  description:
+    'Freshly prepared whole wheat roti cooked to perfection, soft, wholesome and perfect with any curry.',
+  price: 25,
+  category: 'breads',
+  image: '/MenuImages/Wheat Roti.png',
+  tags: ['Whole Wheat', 'Traditional'],
+  veg: true,
+},
+
+{
+  id: 'laccha-paratha',
+  name: 'Laccha Paratha',
+  description:
+    'Flaky multi-layered paratha cooked with ghee, offering a rich texture and authentic North Indian flavor.',
+  price: 60,
+  category: 'breads',
+  image: '/MenuImages/Laccha Paratha.png',
+  tags: ['Layered', 'Popular'],
+  veg: true,
+},
+
+{
+  id: 'naan',
+  name: 'Naan',
+  description:
+    'Soft and fluffy tandoor-baked Indian bread that pairs perfectly with rich gravies and curries.',
+  price: 50,
+  category: 'breads',
+  image: '/MenuImages/Naan.png',
+  tags: ['Tandoor Fresh', 'Classic'],
+  veg: true,
+},
+
+{
+  id: 'kulcha',
+  name: 'Kulcha',
+  description:
+    'Traditional soft Indian bread baked in a tandoor with a light buttery finish.',
+  price: 60,
+  category: 'breads',
+  image: '/MenuImages/Kulcha.png',
+  tags: ['Tandoori Bread', 'Popular'],
+  veg: true,
+},
+
+{
+  id: 'garlic-naan',
+  name: 'Garlic Naan',
+  description:
+    'Freshly baked naan topped with aromatic garlic and herbs for a flavorful tandoori delight.',
+  price: 70,
+  category: 'breads',
+  image: '/MenuImages/Naan.png',
+  tags: ['Garlic Special', 'Bestseller'],
+  veg: true,
+  signature: true,
+},
+
+{
+  id: 'garlic-cheese-naan',
+  name: 'Garlic Cheese Naan',
+  description:
+    'Soft naan stuffed with melted cheese and finished with garlic, creating the ultimate indulgent bread.',
+  price: 120,
+  category: 'breads',
+  image: '/MenuImages/Naan.png',
+  tags: ['Cheese Special', 'Premium'],
+  veg: true,
+  signature: true,
+},
+
+{
+  id: 'bhakri',
+  name: 'Bhakri',
+  description:
+    'Traditional Maharashtrian flatbread prepared fresh and served hot, the perfect companion to pithla, rassa and sukka dishes.',
+  price: 40,
+  category: 'breads',
+  image: '/MenuImages/Bhakri.png',
+  tags: ['Maharashtrian Special', 'Traditional'],
+  veg: true,
+  signature: true,
+},
+
+{
+  id: 'chapati',
+  name: 'Chapati',
+  description:
+    'Soft homemade chapati made from premium wheat flour, served fresh with every meal.',
+  price: 20,
+  category: 'breads',
+  image: '/MenuImages/Chapati.png',
+  tags: ['Homestyle', 'Traditional'],
+  veg: true,
+},
+
+{
+  id: 'puri',
+  name: 'Puri',
+  description:
+    'Golden fried Indian bread served hot and fluffy, perfect with traditional Maharashtrian and Punjabi dishes.',
+  price: 60,
+  category: 'breads',
+  image: '/MenuImages/Puri.png',
+  tags: ['Traditional', 'Popular'],
+  veg: true,
+},
+
+{
+  id: 'aloo-paratha',
+  name: 'Aloo Paratha',
+  description:
+    'Stuffed whole wheat flatbread filled with spiced potatoes and cooked until golden brown.',
+  price: 120,
+  category: 'breads',
+  image: '/MenuImages/Paratha.png',
+  tags: ['Stuffed Paratha', 'Popular'],
+  veg: true,
+},
+
+{
+  id: 'gobi-paratha',
+  name: 'Gobi Paratha',
+  description:
+    'Traditional North Indian flatbread stuffed with seasoned cauliflower and cooked to perfection.',
+  price: 130,
+  category: 'breads',
+  image: '/MenuImages/Paratha.png',
+  tags: ['Stuffed Paratha', 'North Indian'],
+  veg: true,
+},
+
+{
+  id: 'paneer-paratha',
+  name: 'Paneer Paratha',
+  description:
+    'Soft whole wheat paratha generously stuffed with flavorful paneer and aromatic spices.',
+  price: 150,
+  category: 'breads',
+  image: '/MenuImages/Paratha.png',
+  tags: ['Paneer Special', 'Premium'],
+  veg: true,
+  signature: true,
+},
+
 ];
 
 export type GalleryImage = {
   id: string;
   src: string;
   alt: string;
-  category: 'Food' | 'Ambience' | 'Restaurant' | 'Events';
+  category: 'Food' | 'Ambience' | 'Restaurant' | 'Events'| 'Before & After';
   width: number;
   height: number;
 };
@@ -366,6 +1994,160 @@ export const galleryImages: GalleryImage[] = [
     width: 900,
     height: 1200,
   },
+  {
+    id: 'g13',
+    src: '/BeforeAfterImages/IMG_20190626_124814.jpg',
+    alt: 'Old Structure',
+    category: 'Before & After',
+    width: 900,
+    height: 1200,
+  },
+  {
+    id: 'g14',
+    src: '/BeforeAfterImages/PXL_20230718_095616558.MP.jpg',
+    alt: 'New Structure',
+    category: 'Before & After',
+    width: 900,
+    height: 1200,
+  },
+  {
+    id: 'g15',
+    src: '/BeforeAfterImages/IMG_20190626_125150.jpg',
+    alt: 'Old Structure',
+    category: 'Before & After',
+    width: 900,
+    height: 800,
+  },
+  {
+    id: 'g16',
+    src: '/BeforeAfterImages/Old Wall.jpg',
+    alt: 'Old Structure',
+    category: 'Before & After',
+    width: 900,
+    height: 800,
+  },
+  {
+    id: 'g17',
+    src: '/BeforeAfterImages/New Wall Art.jpg',
+    alt: 'New Structure',
+    category: 'Before & After',
+    width: 900,
+    height: 800,
+  },
+  {
+    id: 'g18',
+    src: '/BeforeAfterImages/Before Dinning area.jpg',
+    alt: 'Old Structure',
+    category: 'Before & After',
+    width: 900,
+    height: 800,
+  },
+  {
+    id: 'g19',
+    src: '/BeforeAfterImages/New Dinning Area.jpg',
+    alt: 'New Structure',
+    category: 'Before & After',
+    width: 900,
+    height: 800,
+  },
+  {
+    id: 'g20',
+    src: '/BeforeAfterImages/Old Dinning Area 2.jpg',
+    alt: 'Old Structure',
+    category: 'Before & After',
+    width: 900,
+    height: 800,
+  },
+  {
+    id: 'g21',
+    src: '/BeforeAfterImages/New Dinning Area 2.jpg',
+    alt: 'New Structure',
+    category: 'Before & After',
+    width: 900,
+    height: 800,
+  },
+
+  {
+    id: 'g23',
+    src: '/BeforeAfterImages/New Entrance.jpg',
+    alt: 'New Structure',
+    category: 'Before & After',
+    width: 900,
+    height: 800,
+  },
+  {
+    id: 'g24',
+    src: '/BeforeAfterImages/New Dinning Area 3.jpg',
+    alt: 'New Structure',
+    category: 'Before & After',
+    width: 900,
+    height: 800,
+  },
+  {
+    id: 'g25',
+    src: '/images/Indoor Seating 1.jpg',
+    alt: 'Ambience',
+    category: 'Ambience',
+    width: 900,
+    height: 800,
+  },
+  {
+    id: 'g26',
+    src: '/images/Indoor Seating 2.jpg',
+    alt: 'Ambience',
+    category: 'Ambience',
+    width: 900,
+    height: 800,
+  },
+  {
+    id: 'g27',
+    src: '/images/Indoor Seating 3.jpg',
+    alt: 'Ambience',
+    category: 'Ambience',
+    width: 900,
+    height: 800,
+  },
+  {
+    id: 'g28',
+    src: '/images/Indoor Seating 4.jpg',
+    alt: 'Ambience',
+    category: 'Ambience',
+    width: 900,
+    height: 800,
+  },
+  {
+    id: 'g29',
+    src: '/images/Indoor Seating 5.jpg',
+    alt: 'Ambience',
+    category: 'Ambience',
+    width: 900,
+    height: 800,
+  },
+  {
+    id: 'g30',
+    src: '/images/Indoor Seating 6.jpg',
+    alt: 'Ambience',
+    category: 'Ambience',
+    width: 900,
+    height: 800,
+  },
+  {
+    id: 'g31',
+    src: '/images/Art.jpg',
+    alt: 'Ambience',
+    category: 'Ambience',
+    width: 900,
+    height: 800,
+  },
+  {
+    id: 'g32',
+    src: '/images/Art1.jpg',
+    alt: 'Ambience',
+    category: 'Ambience',
+    width: 900,
+    height: 800,
+  },
+  
 ];
 
 export type Testimonial = {

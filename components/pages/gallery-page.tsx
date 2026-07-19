@@ -7,7 +7,7 @@ import { PageHero } from '@/components/shared/page-hero';
 import { galleryImages } from '@/lib/data';
 import { cn } from '@/lib/utils';
 
-const categories = ['All', 'Food', 'Ambience', 'Restaurant', 'Events'] as const;
+const categories = ['All', 'Food', 'Ambience', 'Restaurant', 'Before & After'] as const;
 
 export function GalleryPage() {
   const [active, setActive] = React.useState<(typeof categories)[number]>('All');

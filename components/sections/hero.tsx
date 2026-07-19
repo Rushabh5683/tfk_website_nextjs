@@ -97,7 +97,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.85 }}
-            className="mt-4 font-serif max-w-xl text-lg leading-relaxed text-white/75 sm:text-xl"
+            className="mt-4 font-serif max-w-xl text-lg leading-relaxed text-white sm:text-xl"
           >
             From traditional Maharashtrian delicacies to Punjabi favorites, every dish is crafted with authentic flavors and heartfelt hospitality          </motion.p>
 

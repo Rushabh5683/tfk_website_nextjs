@@ -3,7 +3,7 @@ export const siteConfig = {
   shortName: "TFK",
   tagline: 'Authentic Flavors. Memorable Moments.',
   description:
-    "The Farmer's Kitchen Shirwal serves authentic Maharashtrian, Punjabi, North Indian, Chinese and Mughlai cuisine. Premium family dining, reservations, takeaway and unforgettable hospitality.",
+    "The Farmer's Kitchen Shirwal serves authentic Maharashtrian, Punjabi, North Indian, Chinese cuisine. Premium family dining, reservations, takeaway and unforgettable hospitality.",
   url: 'https://thefarmerskitchen.in',
   ogImage:
     'https://images.pexels.com/photos/9418616/pexels-photo-9418616.jpeg?auto=compress&cs=tinysrgb&w=1200',
@@ -18,7 +18,7 @@ export const siteConfig = {
     mapQuery: "The Farmer's Kitchen Shirwal Maharashtra",
   },
   phone: {
-    primary: '+91 8888833676 / +91 9011154531',
+    primary: '+91 8888833676  | +91 9011154531',
     // secondary: '+91 9011154531',
     primaryRaw: '918888833676',
     secondaryRaw: '919011154531',
@@ -43,7 +43,7 @@ export const siteConfig = {
   ],
   type: 'Premium Multi-Cuisine Family Dining Restaurant',
   social: {
-    instagram: 'https://instagram.com',
+    instagram: 'https://www.instagram.com/_thefarmerskitchen_?igsh=MWZyOHM1YXlsbG9peA==',
     facebook: 'https://facebook.com',
     youtube: 'https://youtube.com',
     twitter: 'https://twitter.com',

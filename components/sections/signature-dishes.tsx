@@ -93,12 +93,12 @@ export function SignatureDishes() {
                   <span className="text-xs uppercase tracking-[0.2em] text-ink-300">
                     {dish.category.replace('-', ' ')}
                   </span>
-                  <Link
+                  {/* <Link
                     href="/menu"
                     className="link-underline text-xs font-semibold uppercase tracking-[0.2em] text-brand-600"
                   >
                     Order Now
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
 
