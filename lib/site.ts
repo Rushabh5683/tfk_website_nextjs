@@ -25,7 +25,7 @@ export const siteConfig = {
   },
   rating: 4.2,
   reviewCount: 1700,
-  costForTwo: 700,
+  costForTwo: 800,
   currency: 'INR',
   hours: {
     open: '11:00 AM',
