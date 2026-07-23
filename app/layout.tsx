@@ -1,3 +1,4 @@
+import './globals.css';
 import type { Metadata } from 'next';
 import { siteConfig } from '@/lib/site';
 import { Navbar } from '@/components/shared/navbar';
