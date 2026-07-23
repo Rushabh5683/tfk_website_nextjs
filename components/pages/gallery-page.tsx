@@ -1,6 +1,7 @@
 'use client';
 
 import * as React from 'react';
+import Image from 'next/image';
 import { motion, AnimatePresence, useInView } from 'framer-motion';
 import { ZoomIn, ChevronLeft, ChevronRight } from 'lucide-react';
 import { PageHero } from '@/components/shared/page-hero';
@@ -80,12 +81,17 @@ export function GalleryPage() {
                   className="group relative block w-full overflow-hidden rounded-2xl border border-border"
                   style={{ breakInside: 'avoid' }}
                 >
-                  <img
-                    src={img.src}
-                    alt={img.alt}
-                    className="w-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    loading="lazy"
-                  />
+                  <div className="relative w-full">
+                    <Image
+                      src={img.src}
+                      alt={img.alt}
+                      width={500}
+                      height={400}
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      quality={78}
+                    />
+                  </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-ink-700/85 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-500 group-hover:opacity-100">
                     <span className="grid h-12 w-12 place-items-center rounded-full border border-white/30 bg-white/10 text-white backdrop-blur">
@@ -152,6 +158,7 @@ export function GalleryPage() {
                 src={filtered[lightbox].src}
                 alt={filtered[lightbox].alt}
                 className="max-h-[75vh] max-w-[90vw] rounded-2xl object-contain shadow-2xl"
+                loading="eager"
               />
               <figcaption className="mt-4 text-center text-sm text-white/70">
                 <span className="text-brand-300">{filtered[lightbox].category}</span>

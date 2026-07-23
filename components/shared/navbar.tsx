@@ -68,13 +68,14 @@ export function Navbar() {
         <div className="flex h-20 items-center justify-between">
           <Logo />
 
-          <nav className="hidden items-center gap-1 lg:flex">
+          <nav className="hidden items-center gap-1 lg:flex" aria-label="Main navigation">
             {navLinks.map((link) => {
               const active = pathname === link.href;
               return (
                 <Link
                   key={link.href}
                   href={link.href}
+                  aria-current={active ? 'page' : undefined}
                   className={cn(
                     'relative rounded-full px-4 py-2 text-lg font-medium transition-colors',
                     'text-white/80 hover:text-white',
@@ -116,10 +117,12 @@ export function Navbar() {
             <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
               <SheetTrigger asChild>
                 <button
-                  aria-label="Open menu"
+                  aria-label={mobileOpen ? 'Close navigation menu' : 'Open navigation menu'}
+                  aria-expanded={mobileOpen}
+                  aria-controls="mobile-nav"
                   className="grid h-10 w-10 place-items-center rounded-full border border-white/25 bg-white/10 text-white backdrop-blur"
                 >
-                  <Menu className="h-5 w-5" />
+                  <Menu className="h-5 w-5" aria-hidden />
                 </button>
               </SheetTrigger>
               <SheetContent
@@ -138,7 +141,7 @@ export function Navbar() {
                       <X className="h-5 w-5" />
                     </button>
                   </div>
-                  <nav className="flex flex-1 flex-col gap-1 px-6 py-6">
+                <nav id="mobile-nav" className="flex flex-1 flex-col gap-1 px-6 py-6" aria-label="Mobile navigation">
                     {navLinks.map((link, i) => {
                       const active = pathname === link.href;
                       return (
@@ -150,6 +153,7 @@ export function Navbar() {
                         >
                           <Link
                             href={link.href}
+                            aria-current={active ? 'page' : undefined}
                             className={cn(
                               'flex items-center justify-between rounded-xl px-4 py-3 text-base font-medium transition-colors',
                               active

@@ -26,7 +26,7 @@ export function FloatingButtons() {
   );
 
   return (
-    <div className="fixed bottom-5 right-5 z-40 flex flex-col items-end gap-3 sm:bottom-7 sm:right-7">
+    <div className="fixed bottom-5 right-5 z-40 flex flex-col items-end gap-3 sm:bottom-7 sm:right-7" role="group" aria-label="Quick action buttons">
       <AnimatePresence>
         {showTop && (
           <motion.button
@@ -36,10 +36,10 @@ export function FloatingButtons() {
             exit={{ opacity: 0, scale: 0.6, y: 20 }}
             transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            aria-label="Back to top"
+            aria-label="Scroll back to top"
             className="grid h-11 w-11 place-items-center rounded-full border border-border bg-background/90 text-ink-700 shadow-lg backdrop-blur transition-colors hover:bg-brand-500 hover:text-white"
           >
-            <ArrowUp className="h-5 w-5" />
+            <ArrowUp className="h-5 w-5" aria-hidden />
           </motion.button>
         )}
       </AnimatePresence>
@@ -48,27 +48,27 @@ export function FloatingButtons() {
         href={`https://wa.me/${siteConfig.phone.primaryRaw}?text=${waMessage}`}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Chat on WhatsApp"
+        aria-label="Chat with us on WhatsApp"
         initial={{ opacity: 0, scale: 0.6 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 1, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
         className="group relative grid h-11 w-11 place-items-center rounded-full bg-[#25D366] text-white shadow-xl shadow-[#25D366]/30 animate-pulse-glow"
       >
         <WhatsAppIcon className="h-7 w-7" />
-        <span className="absolute right-16 hidden whitespace-nowrap rounded-full bg-ink-700 px-3 py-1.5 text-xs font-medium text-white opacity-0 transition-opacity group-hover:opacity-100 md:block">
+        <span className="absolute right-16 hidden whitespace-nowrap rounded-full bg-ink-700 px-3 py-1.5 text-xs font-medium text-white opacity-0 transition-opacity group-hover:opacity-100 md:block" aria-hidden>
           Chat with us
         </span>
       </motion.a>
 
       <motion.a
         href={`tel:${siteConfig.phone.primaryRaw}`}
-        aria-label="Call now"
+        aria-label={`Call us at ${siteConfig.phone.primary}`}
         initial={{ opacity: 0, scale: 0.6 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 1.15, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
         className="grid h-10 w-10 place-items-center rounded-full bg-brand-500 text-white shadow-xl shadow-brand-500/30 transition-colors hover:bg-brand-600"
       >
-        <Phone className="h-5 w-5" />
+        <Phone className="h-5 w-5" aria-hidden />
       </motion.a>
     </div>
   );

@@ -1,6 +1,7 @@
 'use client';
 
 import * as React from 'react';
+import Image from 'next/image';
 import { motion, AnimatePresence, useInView } from 'framer-motion';
 import { Search, Flame, Leaf, Star, SlidersHorizontal } from 'lucide-react';
 import { PageHero } from '@/components/shared/page-hero';
@@ -175,11 +176,13 @@ export function MenuPage() {
                       className="group overflow-hidden rounded-2xl border border-border bg-card premium-shadow card-hover"
                     >
                       <div className="relative aspect-[4/3] overflow-hidden">
-                        <img
+                        <Image
                           src={dish.image}
-                          alt={dish.name}
-                          className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-                          loading="lazy"
+                          alt={`${dish.name} - ${dish.veg ? 'Veg' : 'Non-Veg'} dish at The Farmer's Kitchen Shirwal`}
+                          fill
+                          sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                          className="object-cover transition-transform duration-700 group-hover:scale-110"
+                          quality={78}
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-ink-700/60 to-transparent" />
                         <div className="absolute left-3 top-3 flex gap-2">

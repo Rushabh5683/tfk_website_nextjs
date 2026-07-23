@@ -56,7 +56,7 @@ export function Footer() {
   };
 
   return (
-    <footer className="relative overflow-hidden bg-ink-700 text-white">
+    <footer className="relative overflow-hidden bg-ink-700 text-white" aria-label="Site footer">
       <div className="absolute inset-0 -z-0 opacity-30">
         <div className="absolute -left-32 top-10 h-72 w-72 rounded-full bg-brand-500/30 blur-3xl" />
         <div className="absolute -right-32 bottom-0 h-80 w-80 rounded-full bg-brand-300/20 blur-3xl" />
@@ -98,21 +98,23 @@ export function Footer() {
 
           <div className="lg:col-span-2">
             <Reveal delay={0.1}>
-              <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-300">
-                Explore
-              </h3>
-              <ul className="mt-5 space-y-3">
-                {quickLinks.map((l) => (
-                  <li key={l.href}>
-                    <Link
-                      href={l.href}
-                      className="link-underline text-sm text-white/70 transition-colors hover:text-white"
-                    >
-                      {l.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+              <nav aria-label="Footer navigation">
+                <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-300">
+                  Explore
+                </h3>
+                <ul className="mt-5 space-y-3">
+                  {quickLinks.map((l) => (
+                    <li key={l.href}>
+                      <Link
+                        href={l.href}
+                        className="link-underline text-sm text-white/70 transition-colors hover:text-white"
+                      >
+                        {l.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
             </Reveal>
           </div>
 
@@ -136,34 +138,37 @@ export function Footer() {
               <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-300">
                 Visit Us
               </h3>
-              <ul className="mt-5 space-y-4 text-sm text-white/70">
-                <li className="flex items-start gap-3">
-                  <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-brand-400" />
-                  <span>{siteConfig.location.address}</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Phone className="mt-0.5 h-4 w-4 shrink-0 text-brand-400" />
-                  <span className="flex flex-col">
-                    <a href={`tel:${siteConfig.phone.primaryRaw}`} className="hover:text-white">
-                      {siteConfig.phone.primary}
+              <address className="not-italic">
+                <ul className="mt-5 space-y-4 text-sm text-white/70">
+                  <li className="flex items-start gap-3">
+                    <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-brand-400" aria-hidden />
+                    <span>{siteConfig.location.address}</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Phone className="mt-0.5 h-4 w-4 shrink-0 text-brand-400" aria-hidden />
+                    <span className="flex flex-col gap-1">
+                      <a href={`tel:${siteConfig.phone.primaryRaw}`} className="hover:text-white" aria-label={`Call ${siteConfig.phone.primary}`}>
+                        {siteConfig.phone.primary}
+                      </a>
+                      <a href={`tel:${siteConfig.phone.secondaryRaw}`} className="hover:text-white" aria-label={`Call ${siteConfig.phone.secondary}`}>
+                        {siteConfig.phone.secondary}
+                      </a>
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Clock className="mt-0.5 h-4 w-4 shrink-0 text-brand-400" aria-hidden />
+                    <span>
+                      {siteConfig.hours.days} · {siteConfig.hours.open} – {siteConfig.hours.close}
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Mail className="mt-0.5 h-4 w-4 shrink-0 text-brand-400" aria-hidden />
+                    <a href={`mailto:${siteConfig.email}`} className="hover:text-white" aria-label="Send us an email">
+                      {siteConfig.email}
                     </a>
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Clock className="mt-0.5 h-4 w-4 shrink-0 text-brand-400" />
-                  <span>
-                    {siteConfig.hours.days} · {siteConfig.hours.open} – {siteConfig.hours.close}
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Mail className="mt-0.5 h-4 w-4 shrink-0 text-brand-400" />
-                  <a href="mailto:hello@thefarmerskitchen.in" className="hover:text-white">
-                    thefarmerskitchen@gmail.com
-                  </a>
-                </li>
-              </ul>
-
-            
+                  </li>
+                </ul>
+              </address>
             </Reveal>
           </div>
         </div>

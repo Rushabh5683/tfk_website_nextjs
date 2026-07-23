@@ -1,6 +1,7 @@
 'use client';
 
 import * as React from 'react';
+import Link from 'next/link';
 import { motion, useInView } from 'framer-motion';
 import {
   Accordion,
@@ -16,7 +17,7 @@ export function Faq() {
   const inView = useInView(ref, { once: true, margin: '-60px' });
 
   return (
-    <section id="faq" className="section-pad relative overflow-hidden bg-background">
+    <section id="faq" className="section-pad relative overflow-hidden bg-background" aria-label="Frequently Asked Questions">
       <div className="container-mx container-px">
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-5">
@@ -38,12 +39,13 @@ export function Faq() {
               <p className="mt-2 text-sm text-ink-500">
                 Our team is happy to assist with reservations, group bookings, family celebrations, and menu recommendations.
               </p>
-              <a
+              <Link
                 href="/contact"
                 className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-brand-600 hover:text-brand-700"
+                aria-label="Contact The Farmer's Kitchen to plan your visit"
               >
                 Contact us →
-              </a>
+              </Link>
             </motion.div>
           </div>
 

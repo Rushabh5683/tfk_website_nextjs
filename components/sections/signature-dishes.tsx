@@ -1,6 +1,7 @@
 'use client';
 
 import * as React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { motion, useInView } from 'framer-motion';
 import { ArrowRight, Star, Flame, Leaf } from 'lucide-react';
@@ -39,11 +40,13 @@ export function SignatureDishes() {
               className="group relative overflow-hidden rounded-3xl border border-border bg-card premium-shadow card-hover"
             >
               <div className="relative aspect-[4/3] overflow-hidden">
-                <img
+                <Image
                   src={dish.image}
-                  alt={dish.name}
-                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  loading="lazy"
+                  alt={`${dish.name} - ${dish.category} dish at The Farmer's Kitchen Shirwal`}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  quality={80}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink-700/85 via-ink-700/20 to-transparent" />
 

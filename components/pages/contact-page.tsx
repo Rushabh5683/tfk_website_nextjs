@@ -216,7 +216,7 @@ Thank you ❤️
 
 
 
-      <section className="pb-20 md:pb-28 " style={{ marginTop: '4rem' }}>
+      <section className="pb-20 md:pb-28" style={{ marginTop: '4rem' }} aria-label="Contact and table reservation">
         <div className="container-mx container-px">
           <div className="grid gap-10 lg:grid-cols-12 lg:gap-12">
             <div className="lg:col-span-7">
@@ -368,6 +368,8 @@ Thank you ❤️
                     <Button
                       type="submit"
                       disabled={loading}
+                      aria-busy={loading}
+                      aria-label={loading ? 'Preparing your reservation...' : 'Submit reservation request'}
                       className="h-12 w-full rounded-full"
                     >
                       {loading ? (
@@ -486,11 +488,9 @@ Thank you ❤️
           </div>
         </div>
       </section>
-      <Dialog open={showModal}>
-
+      <Dialog open={showModal} aria-describedby="reservation-status">
         <DialogContent className="max-w-md rounded-3xl">
-
-          <div className="py-8 text-center">
+          <div id="reservation-status" className="py-8 text-center" role="status" aria-live="polite">
 
             {loading ? (
 

@@ -1,6 +1,7 @@
 'use client';
 
 import * as React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
@@ -35,9 +36,14 @@ export function PageHero({
       className="relative flex h-[70svh] min-h-[480px] items-end overflow-hidden pt-20"
     >
       <motion.div style={{ scale, y }} className="absolute inset-0 z-0">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url('${image}')` }}
+        <Image
+          src={image}
+          alt={`${title} - The Farmer's Kitchen Shirwal`}
+          fill
+          sizes="100vw"
+          priority
+          className="object-cover object-center"
+          quality={80}
         />
         <div className="absolute inset-0 bg-black/50" />
       </motion.div>

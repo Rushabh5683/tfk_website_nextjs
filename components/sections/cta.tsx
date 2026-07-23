@@ -1,6 +1,7 @@
 'use client';
 
 import * as React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { motion, useInView, useScroll, useTransform } from 'framer-motion';
 import { ArrowRight, CalendarDays, Phone } from 'lucide-react';
@@ -19,12 +20,13 @@ export function Cta() {
   return (
     <section ref={ref} className="relative overflow-hidden py-20 md:py-28">
       <motion.div style={{ y }} className="absolute inset-0 -z-10">
-        <div
-          className="absolute inset-0  bg-center"
-          style={{
-            backgroundImage:
-              "url('/images/6R1A2709.webp')",
-          }}
+        <Image
+          src="/images/6R1A2709.webp"
+          alt="The Farmer's Kitchen Shirwal restaurant - warm dining atmosphere"
+          fill
+          sizes="100vw"
+          className="object-cover object-center"
+          quality={70}
         />
         <div className="absolute inset-0 bg-black/60" />
       </motion.div>

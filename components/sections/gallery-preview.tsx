@@ -1,6 +1,7 @@
 'use client';
 
 import * as React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { motion, AnimatePresence, useInView } from 'framer-motion';
 import { ArrowRight, ZoomIn } from 'lucide-react';
@@ -64,12 +65,17 @@ export function GalleryPreview() {
                 className="group relative block w-full overflow-hidden rounded-2xl border border-border"
                 style={{ breakInside: 'avoid' }}
               >
-                <img
-                  src={img.src}
-                  alt={img.alt}
-                  className="w-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  loading="lazy"
-                />
+                <div className="relative w-full">
+                  <Image
+                    src={img.src}
+                    alt={img.alt}
+                    width={400}
+                    height={300}
+                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                    className="w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    quality={75}
+                  />
+                </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-ink-700/80 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-500 group-hover:opacity-100">
                   <span className="grid h-12 w-12 place-items-center rounded-full border border-white/30 bg-white/10 text-white backdrop-blur">

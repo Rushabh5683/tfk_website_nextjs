@@ -1,6 +1,7 @@
 'use client';
 
 import * as React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { motion, useInView } from 'framer-motion';
 import { ArrowRight, Target, Eye, Heart, Award, Leaf, Users } from 'lucide-react';
@@ -92,11 +93,14 @@ export function AboutPage() {
             <Reveal>
               <div className="relative">
                 <div className="aspect-[4/5] overflow-hidden rounded-3xl premium-shadow">
-                  <img
+                  <Image
                     src="/images/WallDesign.webp"
-                    alt="Family dining at The Farmer's Kitchen"
+                    alt="Beautiful wall design at The Farmer's Kitchen Shirwal restaurant interior"
+                    width={480}
+                    height={600}
+                    sizes="(max-width: 1024px) 100vw, 50vw"
                     className="h-full w-full object-cover"
-                    loading="lazy"
+                    quality={80}
                   />
                 </div>
                 <div className="absolute -bottom-6 -right-6 hidden rounded-2xl border border-border bg-background p-5 shadow-xl sm:block">

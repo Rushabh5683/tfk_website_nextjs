@@ -1,6 +1,7 @@
 'use client';
 
 import * as React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { motion, useInView } from 'framer-motion';
 import { ArrowRight, Quote, CheckCircle2 } from 'lucide-react';
@@ -27,11 +28,13 @@ export function AboutPreview() {
           <div className="relative">
             <Reveal>
               <div className="relative aspect-[4/5] overflow-hidden rounded-3xl premium-shadow">
-                <img
+                <Image
                   src="/images/New Dinning Area 2.webp"
-                  alt="Family dining at The Farmer's Kitchen"
-                  className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
-                  loading="lazy"
+                  alt="Family dining at The Farmer's Kitchen Shirwal - warm and welcoming restaurant"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover transition-transform duration-700 hover:scale-105"
+                  quality={80}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink-700/40 to-transparent" />
               </div>

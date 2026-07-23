@@ -1,6 +1,7 @@
 'use client';
 
 import * as React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowRight, CalendarDays, UtensilsCrossed, Star, MapPin, Clock } from 'lucide-react';
@@ -38,12 +39,14 @@ export function Hero() {
         style={{ scale, y }}
         className="absolute inset-0 z-0"
       >
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage:
-              "url('/images/New Dinning Area.webp')",
-          }}
+        <Image
+          src="/images/New Dinning Area.webp"
+          alt="The Farmer's Kitchen dining area - premium family restaurant in Shirwal"
+          fill
+          sizes="100vw"
+          priority
+          className="object-cover object-center"
+          quality={85}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/45 to-black/70" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/10 via-transparent to-black/30" />
