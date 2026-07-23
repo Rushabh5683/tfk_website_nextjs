@@ -82,7 +82,7 @@ export function AboutPage() {
         eyebrow="ROOTED IN TRADITION"
         title="Where Great Food Brings People Together"
         description="A premium multi-cuisine family dining destination on NH-48 Pune Banglore Highway — where authentic regional recipes meet warm hospitality."
-        image="/images/6R1A2719 (1).jpg"
+        image="/images/New Dinning Area 2.webp"
         breadcrumb="About"
       />
 
@@ -93,7 +93,7 @@ export function AboutPage() {
               <div className="relative">
                 <div className="aspect-[4/5] overflow-hidden rounded-3xl premium-shadow">
                   <img
-                    src="/images/6R1A2712 (1).jpg"
+                    src="/images/WallDesign.webp"
                     alt="Family dining at The Farmer's Kitchen"
                     className="h-full w-full object-cover"
                     loading="lazy"

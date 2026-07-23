@@ -28,7 +28,7 @@ export function AboutPreview() {
             <Reveal>
               <div className="relative aspect-[4/5] overflow-hidden rounded-3xl premium-shadow">
                 <img
-                  src="images/6R1A2715.jpg"
+                  src="/images/New Dinning Area 2.webp"
                   alt="Family dining at The Farmer's Kitchen"
                   className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
                   loading="lazy"

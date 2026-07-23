@@ -42,7 +42,7 @@ export function Hero() {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('images/6R1A2719 (1).jpg')",
+              "url('/images/New Dinning Area.webp')",
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/45 to-black/70" />

@@ -23,7 +23,7 @@ export function Cta() {
           className="absolute inset-0  bg-center"
           style={{
             backgroundImage:
-              "url('/images/6R1A2709.jpg')",
+              "url('/images/6R1A2709.webp')",
           }}
         />
         <div className="absolute inset-0 bg-black/60" />

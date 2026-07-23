@@ -41,7 +41,7 @@ export function MenuPage() {
         eyebrow="SIGNATURE FLAVORS"
         title="Discover Authentic Flavors"
         description="Every plate at The Farmer's Kitchen celebrates authentic flavors, fresh ingredients, and the rich culinary traditions of India."
-        image="/images/6R1A2715.jpg"
+        image="/images/Menu_Screen_Banner.webp"
         breadcrumb="Menu"
       />
 

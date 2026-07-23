@@ -40,7 +40,7 @@ export function GalleryPage() {
         eyebrow="Gallery"
         title="A Visual Feast"
         description="Step inside The Farmer's Kitchen through our lens — from beautifully plated signature dishes to the warm ambience of our dining room and the joy of customer celebrations."
-        image="/images/6R1A2708.jpg"
+        image="/images/New Dinning Area 3.webp"
         breadcrumb="Gallery"
       />
 

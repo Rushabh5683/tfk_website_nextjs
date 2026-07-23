@@ -210,7 +210,7 @@ Thank you ❤️
         eyebrow="Get in Touch"
         title="Let's Create Delicious Memories"
         description="Whether it's a family dinner, birthday celebration, business gathering, or weekend outing, we're ready to make your visit memorable with authentic flavors and warm hospitality."
-        image="/images/6R1A2715.jpg"
+        image="/images/New Dinning Area.webp"
         breadcrumb="Contact"
       />
 
