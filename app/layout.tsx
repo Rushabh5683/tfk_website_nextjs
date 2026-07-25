@@ -81,14 +81,11 @@ export const metadata: Metadata = {
   },
   manifest: '/manifest.webmanifest',
   icons: {
-    icon: [
-      { url: '/favicon.ico', sizes: '48x48' },
-      { url: '/icon.svg', type: 'image/svg+xml', sizes: 'any' },
-    ],
+    icon: { url: '/circle_logo.png', type: 'image/png' },
     apple: [
-      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
+      { url: '/circle_logo.png', sizes: '180x180', type: 'image/png' },
     ],
-    shortcut: '/favicon.ico',
+    shortcut: '/circle_logo.png',
   },
   formatDetection: {
     telephone: true,
