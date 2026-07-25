@@ -23,7 +23,7 @@ export const siteConfig = {
     primaryRaw: '918888833676',
     secondaryRaw: '919011154531',
   },
-  email: 'hello@thefarmerskitchen.in',
+  email: 'tfkshirwal@gmail.com',
   rating: 4.2,
   reviewCount: 1700,
   costForTwo: 800,

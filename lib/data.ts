@@ -228,7 +228,7 @@ export const dishes: Dish[] = [
   name: 'Puran Poli Thali',
   description:
     'A festive Maharashtrian thali featuring two authentic puran polis served with milk and jaggery, katachi amti, rice, papad, kurdai and traditional bhajis.',
-  price: 390,
+  price: 450,
   category: 'maharashtrian',
   image: '/MenuImages/Puran Poli Thali.webp',
   tags: ['Festival Special', 'Best Seller'],
@@ -240,7 +240,7 @@ export const dishes: Dish[] = [
   name: 'Punjabi Mini Thali',
   description:
     'A satisfying Punjabi meal featuring a paneer or vegetable preparation, dal, jeera rice, roti, salad, papad and traditional accompaniments.',
-  price: 280,
+  price: 350,
   category: 'punjabi',
   image: '/MenuImages/Punjabi Mini Thali (1).webp',
   tags: ['Punjabi Special', 'Mini Thali'],
@@ -396,7 +396,7 @@ export const dishes: Dish[] = [
   name: 'Jeera Aloo',
   description:
     'Golden potatoes sautéed with roasted cumin seeds, fresh herbs and traditional North Indian spices.',
-  price: 240,
+  price: 230,
   category: 'punjabi',
   image: '/MenuImages/Jeera Aloo.webp',
   tags: ['Classic', 'Homestyle'],
@@ -408,7 +408,7 @@ export const dishes: Dish[] = [
   name: 'Aloo Gobi',
   description:
     'A comforting combination of potatoes and cauliflower cooked with aromatic Punjabi spices.',
-  price: 250,
+  price: 235,
   category: 'punjabi',
   image: '/MenuImages/Aloo Gobi.webp',
   tags: ['Traditional', 'Vegetarian'],
@@ -420,7 +420,7 @@ export const dishes: Dish[] = [
   name: 'Aloo Mutter',
   description:
     'Tender potatoes and green peas simmered in a flavorful tomato-onion gravy.',
-  price: 260,
+  price: 235,
   category: 'punjabi',
   image: '/MenuImages/Aloo Gobi.webp',
   tags: ['Classic', 'Comfort Food'],
@@ -432,7 +432,7 @@ export const dishes: Dish[] = [
   name: 'Dum Aloo',
   description:
     'Baby potatoes slow-cooked in a rich and aromatic gravy infused with traditional spices.',
-  price: 280,
+  price: 270,
   category: 'punjabi',
   image: '/MenuImages/Aloo Gobi.webp',
   tags: ['Slow Cooked', 'Traditional'],
@@ -444,7 +444,7 @@ export const dishes: Dish[] = [
   name: 'Veg Handi',
   description:
     'A rich medley of fresh vegetables cooked in a traditional handi-style gravy.',
-  price: 290,
+  price: 285,
   category: 'punjabi',
   image: '/MenuImages/Veg Handi.webp',
   tags: ['Handi Special', 'Popular'],
@@ -456,7 +456,7 @@ export const dishes: Dish[] = [
   name: 'Veg Lajawab',
   description:
     'An indulgent vegetable preparation cooked in a creamy and flavorful chef-special gravy.',
-  price: 300,
+  price: 285,
   category: 'punjabi',
   image: '/MenuImages/Veg Lajawab.webp',
   tags: ['Chef Special', 'Rich'],
@@ -468,7 +468,7 @@ export const dishes: Dish[] = [
   name: 'Veg Kolhapuri',
   description:
     'Mixed vegetables cooked in a fiery Kolhapuri-style gravy packed with bold spices.',
-  price: 300,
+  price: 285,
   category: 'punjabi',
   image: '/MenuImages/Veg Lajawab.webp',
   tags: ['Spicy', 'Popular'],
@@ -481,7 +481,7 @@ export const dishes: Dish[] = [
   name: 'Veg Maratha',
   description:
     'A flavorful blend of vegetables prepared in a spicy Maharashtrian-inspired gravy.',
-  price: 300,
+  price: 285,
   category: 'punjabi',
   image: '/MenuImages/Veg Lajawab.webp',
   tags: ['Spicy', 'Chef Recommended'],
@@ -494,7 +494,7 @@ export const dishes: Dish[] = [
   name: 'Veg Jalfrezi',
   description:
     'Fresh vegetables tossed with onions, capsicum and tangy tomato-based spices.',
-  price: 290,
+  price: 285,
   category: 'punjabi',
   image: '/MenuImages/Veg Lajawab.webp',
   tags: ['Tangy', 'Classic'],
@@ -506,7 +506,7 @@ export const dishes: Dish[] = [
   name: 'Veg Hyderabadi',
   description:
     'A royal vegetable curry prepared with rich spices and authentic Hyderabadi flavors.',
-  price: 310,
+  price: 285,
   category: 'punjabi',
   image: '/MenuImages/Veg Lajawab.webp',
   tags: ['Royal', 'Rich'],
@@ -518,7 +518,7 @@ export const dishes: Dish[] = [
   name: 'Veg Kadhai',
   description:
     'Seasonal vegetables cooked in freshly ground kadhai masala with onions and capsicum.',
-  price: 300,
+  price: 285,
   category: 'punjabi',
   image: '/MenuImages/Veg Lajawab.webp',
   tags: ['Kadhai Special', 'Popular'],
@@ -530,7 +530,7 @@ export const dishes: Dish[] = [
   name: 'Mutter Paneer',
   description:
     'Soft paneer cubes and green peas simmered in a rich tomato-onion gravy.',
-  price: 320,
+  price: 295,
   category: 'punjabi',
   image: '/MenuImages/Mutter Panner.webp',
   tags: ['Paneer Special', 'Classic'],
@@ -542,7 +542,7 @@ export const dishes: Dish[] = [
   name: 'Veg Kofta',
   description:
     'Delicate vegetable dumplings served in a rich and creamy North Indian gravy.',
-  price: 320,
+  price: 310,
   category: 'punjabi',
   image: '/MenuImages/Veg Kofta.webp',
   tags: ['Creamy', 'Popular'],
@@ -569,7 +569,7 @@ export const dishes: Dish[] = [
   name: 'Paneer Khurchan',
   description:
     'Shredded paneer tossed with onions, capsicum and aromatic North Indian spices.',
-  price: 330,
+  price: 310,
   category: 'punjabi',
   image: '/MenuImages/Panner.webp',
   tags: ['Chef Special', 'Popular'],
@@ -581,7 +581,7 @@ export const dishes: Dish[] = [
   name: 'Paneer Lasooni',
   description:
     'Paneer cubes cooked in a rich garlic-infused gravy with authentic Punjabi flavors.',
-  price: 320,
+  price: 310,
   category: 'punjabi',
   image: '/MenuImages/Panner.webp',
   tags: ['Garlic Special'],
@@ -593,7 +593,7 @@ export const dishes: Dish[] = [
   name: 'Palak Paneer',
   description:
     'Fresh cottage cheese simmered in a creamy spinach gravy seasoned with traditional spices.',
-  price: 320,
+  price: 310,
   category: 'punjabi',
   image: '/MenuImages/Palak Panner.webp',
   tags: ['Healthy', 'Popular'],
@@ -605,7 +605,7 @@ export const dishes: Dish[] = [
   name: 'Paneer Tikka Masala',
   description:
     'Char-grilled paneer tikka finished in a rich tomato-onion masala gravy.',
-  price: 340,
+  price: 310,
   category: 'punjabi',
   image: '/MenuImages/Panner.webp',
   tags: ['Tandoori', 'Popular'],
@@ -617,7 +617,7 @@ export const dishes: Dish[] = [
   name: 'Dal Fry',
   description:
     'A comforting Punjabi classic made with yellow lentils tempered with onions, tomatoes and aromatic spices.',
-  price: 220,
+  price: 270,
   category: 'punjabi',
   image: '/MenuImages/Dal Fry.webp',
   tags: ['Punjabi Classic', 'Comfort Food'],
@@ -629,7 +629,7 @@ export const dishes: Dish[] = [
   name: 'Dal Tadka',
   description:
     'Slow-cooked lentils finished with a sizzling tempering of cumin, garlic and traditional Punjabi spices.',
-  price: 240,
+  price: 285,
   category: 'punjabi',
   image: '/MenuImages/Dal Fry.webp',
   tags: ['Traditional', 'Popular'],
@@ -641,7 +641,7 @@ export const dishes: Dish[] = [
   name: 'Lasooni Dal Tadka',
   description:
     'Rich lentils infused with roasted garlic and topped with a flavorful tadka for a bold Punjabi taste.',
-  price: 260,
+  price: 295,
   category: 'punjabi',
   image: '/MenuImages/Dal Fry.webp',
   tags: ['Garlic Special', 'Chef Recommended'],
@@ -654,7 +654,7 @@ export const dishes: Dish[] = [
   name: 'Paneer Bhurji',
   description:
     'Crumbled paneer sautéed with onions, tomatoes and aromatic Indian spices.',
-  price: 290,
+  price: 320,
   category: 'punjabi',
   image: '/MenuImages/Panner Burgi.webp',
   tags: ['Homestyle', 'Protein Rich'],
@@ -666,7 +666,7 @@ export const dishes: Dish[] = [
   name: 'Kaju Masala',
   description:
     'Premium cashews cooked in a rich and creamy tomato-based gravy.',
-  price: 350,
+  price: 320,
   category: 'punjabi',
   image: '/MenuImages/Kaju Masala.webp',
   tags: ['Premium', 'Rich'],
@@ -702,7 +702,7 @@ export const dishes: Dish[] = [
   name: 'Paneer Butter Masala',
   description:
     'Soft paneer cubes simmered in a rich tomato-butter gravy finished with cream and aromatic spices.',
-  price: 330,
+  price: 320,
   category: 'punjabi',
   image: '/MenuImages/Panner.webp',
   tags: ['Bestseller', 'Creamy'],
@@ -715,7 +715,7 @@ export const dishes: Dish[] = [
   name: 'Butter Chicken',
   description:
     'Tender tandoori chicken simmered in a velvety tomato-butter gravy enriched with cream and aromatic spices.',
-  price: 420,
+  price: 440,
   category: 'punjabi',
   image: '/MenuImages/Butter Chicken.webp',
   tags: ['Bestseller', 'Creamy'],
@@ -727,7 +727,7 @@ export const dishes: Dish[] = [
   name: 'Chicken Tikka Masala',
   description:
     'Juicy chicken tikka cooked in a rich tomato-onion gravy with authentic Punjabi flavors.',
-  price: 430,
+  price: 415,
   category: 'punjabi',
   image: '/MenuImages/Chicken Tikka Masala.webp',
   tags: ['Tandoori', 'Popular'],
@@ -739,7 +739,7 @@ export const dishes: Dish[] = [
   name: 'Chicken Bhuna',
   description:
     'Chicken slow-cooked with onions, tomatoes and roasted spices for a rich and intensely flavorful curry.',
-  price: 420,
+  price: 415,
   category: 'punjabi',
   image: '/MenuImages/Chicken Tikka Masala.webp',
   tags: ['Roasted Spices', 'Traditional'],
@@ -751,7 +751,7 @@ export const dishes: Dish[] = [
   name: 'Angari Murgh Masala',
   description:
     'Smoky chicken cooked in a fiery Angara-style gravy infused with roasted spices and bold flavors.',
-  price: 440,
+  price: 425,
   category: 'punjabi',
   image: '/MenuImages/Angari Murgh Masala.webp',
   tags: ['Smoky', 'Chef Special'],
@@ -764,7 +764,7 @@ export const dishes: Dish[] = [
   name: 'Chicken Kadhai',
   description:
     'Tender chicken tossed with capsicum and onions in a freshly ground kadhai masala.',
-  price: 430,
+  price: 425,
   category: 'punjabi',
   image: '/MenuImages/Chicken Kadhai.webp',
   tags: ['Kadhai Special', 'Popular'],
@@ -776,7 +776,7 @@ export const dishes: Dish[] = [
   name: 'Chicken Kheema',
   description:
     'Minced chicken cooked with onions, tomatoes and aromatic spices for a hearty Punjabi delicacy.',
-  price: 390,
+  price: 460,
   category: 'punjabi',
   image: '/MenuImages/Chicken Kheema.webp',
   tags: ['Protein Rich', 'Traditional'],

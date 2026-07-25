@@ -63,9 +63,9 @@ export function SignatureDishes() {
                   )}
                 </div>
 
-                <div className="absolute right-4 top-4 rounded-full bg-brand-500 px-3 py-1 text-xs font-semibold text-white shadow-lg">
+                {/* <div className="absolute right-4 top-4 rounded-full bg-brand-500 px-3 py-1 text-xs font-semibold text-white shadow-lg">
                   ₹{dish.price}
-                </div>
+                </div> */}
 
                 <div className="absolute inset-x-4 bottom-4 translate-y-2 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
                   <div className="flex flex-wrap gap-2">

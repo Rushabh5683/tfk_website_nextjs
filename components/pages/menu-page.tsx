@@ -205,9 +205,9 @@ export function MenuPage() {
                             </span>
                           )}
                         </div>
-                        <div className="absolute right-3 top-3 rounded-full bg-brand-500 px-3 py-1 text-xs font-semibold text-white shadow-lg">
+                        {/* <div className="absolute right-3 top-3 rounded-full bg-brand-500 px-3 py-1 text-xs font-semibold text-white shadow-lg">
                           ₹{dish.price}
-                        </div>
+                        </div> */}
                         {dish.signature && (
                           <div className="absolute bottom-3 left-3 flex items-center gap-1 rounded-full bg-white/10 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-white backdrop-blur">
                             <Star className="h-3 w-3 fill-brand-400 text-brand-400" />

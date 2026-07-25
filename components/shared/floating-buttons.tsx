@@ -2,8 +2,9 @@
 
 import * as React from 'react';
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion';
-import { ArrowUp, Phone } from 'lucide-react';
+import { ArrowUp, Phone  } from 'lucide-react';
 import { siteConfig } from '@/lib/site';
+import { FaInstagram } from "react-icons/fa";
 
 function WhatsAppIcon({ className }: { className?: string }) {
   return (
@@ -57,6 +58,29 @@ export function FloatingButtons() {
         <WhatsAppIcon className="h-7 w-7" />
         <span className="absolute right-16 hidden whitespace-nowrap rounded-full bg-ink-700 px-3 py-1.5 text-xs font-medium text-white opacity-0 transition-opacity group-hover:opacity-100 md:block" aria-hidden>
           Chat with us
+        </span>
+      </motion.a>
+      <motion.a
+        href={siteConfig.social.instagram}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Follow us on Instagram"
+        initial={{ opacity: 0, scale: 0.6 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          delay: 1.08,
+          duration: 0.5,
+          ease: [0.16, 1, 0.3, 1],
+        }}
+        className="group relative grid h-11 w-11 place-items-center rounded-full bg-gradient-to-br from-[#F58529] via-[#DD2A7B] to-[#8134AF] text-white shadow-xl shadow-pink-500/30 transition-transform hover:scale-110"
+      >
+        <FaInstagram className="h-6 w-6" />
+
+        <span
+          className="absolute right-16 hidden whitespace-nowrap rounded-full bg-ink-700 px-3 py-1.5 text-xs font-medium text-white opacity-0 transition-opacity group-hover:opacity-100 md:block"
+          aria-hidden
+        >
+          Follow us
         </span>
       </motion.a>
 
