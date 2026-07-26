@@ -1,4 +1,5 @@
 import './globals.css';
+import { GoogleAnalytics } from '@next/third-parties/google';
 import type { Metadata } from 'next';
 import { siteConfig } from '@/lib/site';
 import { Navbar } from '@/components/shared/navbar';
@@ -251,6 +252,7 @@ export default function RootLayout({
         <Footer />
         <FloatingButtons />
         <SonnerToaster position="top-right" richColors />
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID!} />
       </body>
     </html>
   );
