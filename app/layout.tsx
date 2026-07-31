@@ -80,14 +80,11 @@ export const metadata: Metadata = {
       'max-video-preview': -1,
     },
   },
-  manifest: '/manifest.webmanifest',
   icons: {
-    icon: { url: '/circle_logo.png', type: 'image/png' },
-    apple: [
-      { url: '/circle_logo.png', sizes: '180x180', type: 'image/png' },
-    ],
-    shortcut: '/circle_logo.png',
-  },
+  icon: '/favicon.ico',
+  shortcut: '/favicon.ico',
+  apple: '/apple-touch-icon.png',
+},
   formatDetection: {
     telephone: true,
     address: true,
