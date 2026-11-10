@@ -18,21 +18,12 @@ export function Hero() {
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.15]);
 
-  const [mouse, setMouse] = React.useState({ x: 0, y: 0 });
-  const onMouseMove = (e: React.MouseEvent) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    setMouse({
-      x: ((e.clientX - rect.left) / rect.width - 0.5) * 2,
-      y: ((e.clientY - rect.top) / rect.height - 0.5) * 2,
-    });
-  };
 
   const headline = 'Authentic Flavors. Memorable Moments.';
 
   return (
     <section
       ref={ref}
-      onMouseMove={onMouseMove}
       className="relative h-[100svh] min-h-[640px] w-full overflow-hidden"
     >
       <motion.div
